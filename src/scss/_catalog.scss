@@ -32,11 +32,11 @@
     padding: 0 1.5rem;
     border-right: 1px solid rgba(#bed2e4, 0.5);
     &:nth-child(8n + 1) {
-        // padding-left: 0;
+        padding-left: 0;
     }
 
     &:nth-child(8n) {
-        // padding-right: 0;
+        padding-right: 0;
         border-right: none;
     }
 }

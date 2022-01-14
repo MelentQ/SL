@@ -111,19 +111,7 @@
         margin-bottom: 3rem;
     }
 
-    .parsley-errors-list.filled {
-        width: 100%;
-        font-size: 1.4rem;
-        color: var(--primary-color);
-        order: 10;
-        margin-top: 1rem;
-        font-weight: 600;
-
-        @include breakpoint(mobile) {
-            font-size: 1.2rem;
-            margin-top: 0.5rem;
-        }
-    }
+    
 }
 
 .contacts__form-heading {
