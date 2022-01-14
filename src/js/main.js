@@ -20,6 +20,8 @@ import otherReviews from './otherReviews';
 import contactsMap from './contactsMap';
 import catalog from './catalog';
 import catalogBrandsSlider from './catalogBrandsSlider';
+import introMarkers from './introMarkers';
+import introSlider from './introSlider';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -42,6 +44,8 @@ document.addEventListener('DOMContentLoaded', function () {
     contactsMap();
     catalog();
     catalogBrandsSlider();
+    introMarkers();
+    introSlider();
 });
 
 document.addEventListener('lazyloaded', () => {

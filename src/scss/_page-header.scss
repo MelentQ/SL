@@ -1,0 +1,133 @@
+.page-header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: 50;
+}
+
+.page-header__row {
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.page-header__logo {
+    flex-shrink: 0;
+    margin-right: 10.5rem;
+}
+
+.page-header__logo-image {
+    display: block;
+    height: auto;
+    width: 25.8rem;
+}
+
+.page-header__nav {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.page-header__catalog-link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 110%;
+    text-transform: uppercase;
+    margin-right: 7.5rem;
+    svg {
+        flex-shrink: 0;
+        fill: var(--primary-color);
+        margin-right: 1rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        position: relative;
+        bottom: -0.15rem;
+    }
+
+    @include underline();
+}
+
+.page-header__nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.page-header__nav-list-item {
+    margin-right: 3rem;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.page-header__nav-link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 110%;
+    text-transform: uppercase;
+    display: block;
+    @include underline();
+}
+
+.page-header__whats-app {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin-right: 4rem;
+
+    @include underline();
+}
+
+.page-header__whats-app-logo {
+    width: 4rem;
+    height: 4rem;
+    flex-shrink: 0;
+    margin-left: 1.5rem;
+    object-fit: contain;
+}
+
+.page-header__comparisons {
+    width: 4rem;
+    height: 4rem;
+    flex-shrink: 0;
+    margin-right: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    svg {
+        width: 2.5rem;
+        height: 2.5rem;
+        fill: var(--primary-color);
+    }
+}
+
+.page-header__comparisons-notifications {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1.9rem;
+    height: 1.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #ed5835;
+    border-radius: 50%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 100%;
+    color: white;
+}
