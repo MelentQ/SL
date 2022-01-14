@@ -1,0 +1,250 @@
+.contacts {
+    padding: 10rem 0;
+    background: #f8fbff;
+
+    @include breakpoint(mobile) {
+        padding: 5rem 0;
+    }
+}
+
+.contacts__row {
+    @include grid();
+
+    @include breakpoint(mobile) {
+        grid-row-gap: 2rem;
+    }
+}
+
+.contacts__col {
+    @include breakpointMF(small-tablet) {
+        &:nth-child(1) {
+            grid-column: span 2;
+        }
+
+        &:nth-child(2) {
+            grid-column: span 14;
+        }
+    }
+
+    @include breakpoint(mobile) {
+        grid-column: 1 / -1;
+    }
+}
+
+.contacts__large-heading {
+    margin-bottom: 7.5rem;
+
+    @include breakpoint(mobile) {
+    }
+}
+
+.contacts__inner-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 3rem;
+
+    @include breakpoint(mobile) {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+.contacts__inner-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__address {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 135%;
+    margin-bottom: 5rem;
+
+    @include breakpoint(mobile) {
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+.contacts__links {
+    display: flex;
+    align-items: center;
+    gap: 5.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 7.5rem;
+
+    @include breakpoint(mobile) {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        gap: 2rem;
+        margin: 0;
+    }
+}
+
+.contacts__link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 135%;
+    color: var(--primary-color);
+    &:link,
+    &:visited {
+        color: var(--primary-color);
+    }
+
+    @include underline-large();
+
+    @include breakpoint(mobile) {
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 100%;
+    }
+}
+
+.contacts__form {
+    margin-bottom: 7.5rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 3rem;
+    }
+
+    .parsley-errors-list.filled {
+        width: 100%;
+        font-size: 1.4rem;
+        color: var(--primary-color);
+        order: 10;
+        margin-top: 1rem;
+        font-weight: 600;
+
+        @include breakpoint(mobile) {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+    }
+}
+
+.contacts__form-heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 100%;
+    margin-bottom: 2.5rem;
+
+    @include breakpoint(mobile) {
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+.contacts__form-row {
+    display: flex;
+    align-items: flex-start;
+
+    flex-wrap: wrap;
+
+    @include breakpoint(mobile) {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: stretch;
+    }
+}
+
+.contacts__form-input {
+    width: 34rem;
+    margin-right: 1.5rem;
+
+    @include breakpoint(mobile) {
+        width: 100%;
+        flex-grow: 0;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+.contacts__requisites {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 3.5rem;
+    row-gap: 2.5rem;
+
+    @include breakpoint(mobile) {
+        gap: 3rem;
+        row-gap: 2rem;
+    }
+}
+
+.contacts__requisites-item {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #495f73;
+    line-height: 100%;
+
+    @include breakpoint(mobile) {
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 100%;
+    }
+
+    &:first-child {
+        width: 100%;
+    }
+}
+
+.contacts__requisites-download {
+    display: inline-flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: var(--primary-color);
+
+    @include breakpoint(mobile) {
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 100%;
+    }
+
+    &:link,
+    &:visited {
+        color: var(--primary-color);
+    }
+    svg {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 1.5rem;
+        fill: currentColor;
+        margin-left: 1rem;
+    }
+}
+
+.contacts__map-wrapper {
+    position: relative;
+    border-radius: 2.5rem;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    background-color: #fff;
+    flex-grow: 1;
+    &::before {
+        content: '';
+        display: block;
+        padding-bottom: 56.25%;
+    }
+}
+
+.contacts__map {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}

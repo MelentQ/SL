@@ -1,0 +1,33 @@
+.text-input {
+    height: 7rem;
+    border: 2px solid #bed2e4;
+    border-radius: 2rem;
+    padding: 0 2.5rem;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 100%;
+    transition: color 0.2s, border-color 0.2s;
+    color: #011f3a;
+    width: 100%;
+
+    @include breakpoint(mobile) {
+        height: 5rem;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 100%;
+        padding: 0 2rem;
+        border-radius: 1.5rem;
+    }
+    @include placeholder {
+        color: #bed2e4;
+    }
+
+    &:hover {
+        border-color: #495f73;
+    }
+
+    &:focus {
+        border-color: var(--primary-color);
+        color: #011f3a;
+    }
+}
