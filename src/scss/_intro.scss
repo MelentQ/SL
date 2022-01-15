@@ -396,13 +396,13 @@
 
     align-self: flex-start;
     position: relative;
-    left: 4rem;
+   
     z-index: 30;
 
     @include breakpointMF(small-tablet) {
         grid-column: 10 / 14;
         grid-row: 1 / 2;
-        left: auto;
+        left: 4rem;
     }
 }
 
