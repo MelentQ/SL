@@ -14,6 +14,7 @@
 .about__small-heading {
     @include breakpointMF(small-tablet) {
         grid-column: span 2;
+        margin-top: .5rem;
     }
 
     @include breakpoint(mobile) {

@@ -38,6 +38,11 @@ export default function helpMobileSelect() {
 
         btn.addEventListener('click', event => {
             event.preventDefault();
+            elements.forEach(otherElement => {
+                if (otherElement !== element) {
+                    otherElement.classList.remove('mobile-select-open')
+                }
+            })
             element.classList.toggle('mobile-select-open');
         });
 
