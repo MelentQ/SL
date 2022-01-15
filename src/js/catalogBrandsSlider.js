@@ -1,6 +1,6 @@
-import { Swiper, Navigation } from 'swiper';
+import { Swiper, Navigation, Pagination } from 'swiper';
 
-Swiper.use([Navigation]);
+Swiper.use([Navigation, Pagination]);
 
 export default function catalogBrandsSlider() {
     const elements = Array.from(document.querySelectorAll('.js-catalog-brands-slider'));
@@ -13,6 +13,11 @@ export default function catalogBrandsSlider() {
             speed: 700,
             spaceBetween: 30,
             watchSlidesProgress: true,
+            pagination: {
+                el: element.querySelector('.slider-pagination'),
+                type: 'bullets',
+                clickable: true
+            },
             navigation: {
                 nextEl: element.querySelector('.catalog__brand-slider-arrow--next'),
                 prevEl: element.querySelector('.catalog__brand-slider-arrow--prev')

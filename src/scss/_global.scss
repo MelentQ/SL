@@ -25,8 +25,12 @@ html {
     box-sizing: border-box;
     font-size: 10px;
     -webkit-text-size-adjust: 100%;
-
+    font-size: clamp(5px, 0.52vw, 25px);
     @include noHighlight();
+
+    @include breakpoint(mobile) {
+        font-size: 10px;
+    }
 }
 
 body {
@@ -211,6 +215,12 @@ th {
     body {
         height: auto;
         overflow: hidden;
+    }
+}
+
+.hide-on-mobile {
+    @include breakpoint(mobile) {
+        display: none;
     }
 }
 

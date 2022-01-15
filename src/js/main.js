@@ -22,6 +22,7 @@ import catalog from './catalog';
 import catalogBrandsSlider from './catalogBrandsSlider';
 import introMarkers from './introMarkers';
 import introSlider from './introSlider';
+import helpMobileSelect from './helpMobileSelect';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -46,6 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
     catalogBrandsSlider();
     introMarkers();
     introSlider();
+    helpMobileSelect();
 });
 
 document.addEventListener('lazyloaded', () => {
