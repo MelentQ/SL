@@ -494,19 +494,23 @@
 }
 
 .help__form-mobile-select-dropdown {
-    position: absolute;
-    left: 0;
-    top: 100%;
-    width: 100%;
-    padding-top: 0.5rem;
-    z-index: 40;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .3s, visibility 0s linear .3s;
 
-    .mobile-select-open & {
-        opacity: 1;
-        visibility: inherit;
-        transition: opacity .3s, visibility .3s;
+    @include breakpoint(mobile) {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        padding-top: 0.5rem;
+        z-index: 40;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .3s, visibility 0s linear .3s;
+    
+        .mobile-select-open & {
+            opacity: 1;
+            visibility: inherit;
+            transition: opacity .3s, visibility .3s;
+        }
     }
+   
 }
