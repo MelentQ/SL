@@ -3,10 +3,21 @@
     padding-bottom: 7.5rem;
     background: #011f3a;
     color: white;
+
+    @include breakpoint(mobile) {
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+    }
 }
 
 .page-footer__row {
     @include grid();
+
+    @include breakpoint(mobile) {
+        display: flex;
+        flex-direction: column;
+        grid-gap: initial;
+    }
 }
 
 .page-footer__col {
@@ -24,6 +35,10 @@
         &:nth-child(3) {
             grid-column: span 7;
         }
+    }
+
+    @include breakpoint(mobile) {
+        display: contents;
     }
 }
 
@@ -46,6 +61,12 @@
 
 .page-footer__callback-btn {
     margin-bottom: auto;
+
+    @include breakpoint(mobile) {
+        margin: 0;
+        order: 10;
+        margin-bottom: 2.5rem;
+    }
 }
 
 .page-footer__made-by {
@@ -72,6 +93,11 @@
             opacity: 1;
         }
     }
+
+    @include breakpoint(mobile) {
+        order: 20;
+        margin: 0;
+    }
 }
 
 .page-footer__made-by-logo {
@@ -83,6 +109,10 @@
     transition: opacity 0.2s;
     position: relative;
     bottom: -0.3rem;
+
+    @include breakpoint(mobile) {
+        width: 9.6rem;
+    }
 }
 
 .page-footer__email-link {
@@ -94,6 +124,12 @@
     align-self: flex-start;
 
     @include underline-large();
+
+    @include breakpoint(mobile) {
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 100%;
+    }
 }
 
 .page-footer__address {
@@ -102,6 +138,13 @@
     line-height: 125%;
     color: rgba(white, 0.5);
     margin-bottom: 5rem;
+
+    @include breakpoint(mobile) {
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 115%;
+        margin-bottom: 2.5rem;
+    }
 }
 
 .page-footer__social-list {
@@ -110,6 +153,25 @@
     flex-wrap: wrap;
     gap: 1.5rem;
     margin-bottom: auto;
+
+    @include breakpoint(mobile) {
+        margin: 0;
+        order: 12;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.page-footer__mobile-divider {
+    display: none;
+
+    @include breakpoint(mobile) {
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #0D3355;
+        margin-bottom: 3rem;
+        order: 13;
+    }
 }
 
 .page-footer__social-link {
@@ -147,6 +209,12 @@
     display: inline-flex;
     align-self: flex-start;
     margin-top: 3rem;
+
+    @include breakpoint(mobile) {
+        margin: 0;
+        order: 18;
+        margin-bottom: 2.5rem;
+    }
 }
 
 .page-footer__policy {
@@ -167,6 +235,17 @@
     }
 
     @include underline();
+
+    @include breakpoint(mobile) {
+        order: 16;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.page-footer__nav {
+    @include breakpoint(mobile) {
+        display: none;
+    }
 }
 
 .page-footer__nav-list {

@@ -13,15 +13,15 @@ export default function contactsMap() {
             const pin = {
                 iconLayout: 'default#image',
                 iconImageHref: pinURL,
-                iconImageSize: [55, 55],
-                iconImageOffset: [-27.5, -55]
+                iconImageSize: window.matchMedia('(max-width: 640px)').matches ? [40, 40] : [55, 55],
+                iconImageOffset: window.matchMedia('(max-width: 640px)').matches ? [-20, -40] : [-27.5, -55]
             };
 
             const coords = location.split(',');
 
             const mapInstance = new ymaps.Map(element, {
                 center: coords,
-                zoom: 14,
+                zoom: window.matchMedia('(max-width: 640px)').matches ? 12 : 14,
                 controls: []
             });
 
@@ -31,8 +31,8 @@ export default function contactsMap() {
                 options: {
                     size: 'small',
                     position: {
-                        right: 20,
-                        bottom: 60
+                        right: 10,
+                        bottom: 40
                     }
                 }
             });

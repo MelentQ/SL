@@ -327,6 +327,7 @@
     overflow-x: hidden;
     overscroll-behavior: contain;
     -webkit-overflow-scrolling: touch;
+    padding-right: 2rem;
 
     &::-webkit-scrollbar {
         background: #f8fbff;
