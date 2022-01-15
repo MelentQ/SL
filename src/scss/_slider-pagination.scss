@@ -12,6 +12,7 @@
         height: 0.5rem;
         border-radius: 1rem;
         transition: background-color .2s, width .2s;
+        flex-shrink: 0;
     }
 
     .swiper-pagination-bullet-active {

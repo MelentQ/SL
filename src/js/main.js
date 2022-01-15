@@ -23,6 +23,7 @@ import catalogBrandsSlider from './catalogBrandsSlider';
 import introMarkers from './introMarkers';
 import introSlider from './introSlider';
 import helpMobileSelect from './helpMobileSelect';
+import reviewsMobileSlider from './reviewsMobileSlider';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -48,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
     introMarkers();
     introSlider();
     helpMobileSelect();
+    reviewsMobileSlider();
 });
 
 document.addEventListener('lazyloaded', () => {
