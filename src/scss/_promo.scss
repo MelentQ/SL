@@ -1,6 +1,10 @@
 .promo {
     padding-top: 10rem;
     padding-bottom: 5.5rem;
+
+    @include breakpoint(mobile) {
+        padding: 5rem 0;
+    }
 }
 
 .promo__card {
@@ -14,14 +18,20 @@
     transform: translateZ(0);
     background: linear-gradient(0deg, rgba(2, 21, 39, 0.25), rgba(2, 21, 39, 0.25)), linear-gradient(85.67deg, #1764aa 0.44%, #2bc8eb 100%);
     box-shadow: 0px 0px 7.5rem rgba(0, 0, 0, 0.05);
+
+    @include breakpoint(mobile) {
+        padding: 1.5rem;
+        border-radius: 1.5rem;
+        background: linear-gradient(0deg, rgba(2, 21, 39, 0.25), rgba(2, 21, 39, 0.25)), linear-gradient(85.67deg, #1764aa 0.44%, #2bc8eb 100%);
+        min-height: 49.5rem;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .promo__card-image {
     position: absolute;
-    // right: 0;
-    // top: 0;
-    // width: auto;
-    // height: 100%;
+
     z-index: -1;
     object-fit: cover;
 
@@ -29,7 +39,6 @@
     top: 0;
     width: 100%;
     height: 100%;
-    
 }
 
 .promo__card-heading {
@@ -39,18 +48,43 @@
     line-height: 120%;
     max-width: 120rem;
     margin-bottom: 6rem;
+
+    @include breakpoint(mobile) {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 125%;
+        margin-bottom: 3rem;
+    }
 }
 
 .promo__advantages-list {
     display: flex;
     flex-direction: column;
     margin-bottom: 6rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 3rem;
+
+        
+    }
 }
 
 .promo__advantages-item {
     display: flex;
     align-items: flex-start;
     margin-bottom: 2.2rem;
+    @include breakpoint(mobile) {
+        margin-bottom: 1.5rem;
+
+        display: none;
+
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+            display: flex;
+        }
+    }
 
     &:last-child {
         margin-bottom: 0;
@@ -64,6 +98,12 @@
     margin-right: 1rem;
     object-fit: contain;
     margin-top: -0.3rem;
+
+    @include breakpoint(mobile) {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-top: 0;
+    }
 }
 
 .promo__advantages-text {
@@ -71,6 +111,13 @@
     font-weight: 600;
     font-size: 2rem;
     line-height: 100%;
+
+    @include breakpoint(mobile) {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 100%;
+    }
 }
 
 .promo__advantages-remark {
@@ -80,4 +127,16 @@
     line-height: 100%;
     color: rgba(white, 0.7);
     margin-top: 1rem;
+
+    @include breakpoint(mobile) {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+    }
+}
+
+.promo__btn {
+    @include breakpoint(mobile) {
+        margin-top: auto;
+        width: 100%;
+    }
 }

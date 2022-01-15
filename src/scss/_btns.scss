@@ -185,6 +185,7 @@
 .small-arrow-btn-filled {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     padding: 2.5rem 5rem;
     font-style: normal;
     font-weight: 600;
@@ -220,5 +221,18 @@
         height: 2rem;
         margin-left: 2rem;
         fill: currentColor;
+    }
+
+    @include breakpoint(mobile) {
+        padding: 2rem 4rem;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 100%;
+        border-radius: 1.5rem;
+        svg {
+            width: 1.5rem;
+            height: 1.5rem;
+            margin-left: 1.5rem;
+        }
     }
 }
