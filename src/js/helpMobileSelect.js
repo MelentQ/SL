@@ -9,13 +9,22 @@ export default function helpMobileSelect() {
         const radio = Array.from(element.querySelectorAll('.help__form-checkbox'));
 
         const setSelectValue = () => {
-            const checkedRadio = radio.find(item => {
+            let checkedRadio = radio.find(item => {
                 const input = item.querySelector('input[type="radio"]');
 
                 return input.checked;
             });
 
-            if (!checkedRadio) return;
+            if (!checkedRadio) {
+                if (radio.length) {
+                    checkedRadio = radio[0];
+                    checkedRadio.querySelector('input[type="radio"]').checked = true;
+
+                    console.log('Checked first radio')
+                } else {
+                    return;
+                }
+            };
 
             const radioValue = checkedRadio.querySelector('.help__form-checkbox-value').textContent;
             const radioDesc = checkedRadio.querySelector('.help__form-checkbox-description').textContent;

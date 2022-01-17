@@ -1,0 +1,198 @@
+{{#extend "layout"}}
+{{#content "main"}}
+
+<section class="catalog-page">
+    <div class="container">
+        <div class="catalog-page__top-row">
+            <div class="catalog-page__top-content">
+                <h1 class="catalog-page__main-heading">
+                    Каталог
+                </h1>
+                <div class="catalog-page__categories">
+                    <ul class="catalog-page__categories-list">
+                        <li class="catalog-page__categories-list-item active">
+                            <a href="#" class="catalog-page__categories-link">
+                                Всей техники
+                            </a>
+                        </li>
+                        <li class="catalog-page__categories-list-item">
+                            <a href="#" class="catalog-page__categories-link">
+                                По брендам
+                            </a>
+                        </li>
+                        <li class="catalog-page__categories-list-item">
+                            <a href="#" class="catalog-page__categories-link">
+                                По типам ледорвых арен
+                            </a>
+                        </li>
+                        <li class="catalog-page__categories-list-item">
+                            <a href="#" class="catalog-page__categories-link">
+                                По типам привода
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="catalog-page__what-to-choose">
+                <a href="#" class="what-to-choose">
+                    <div class="what-to-choose__bg">
+                        <img data-src="img/what-to-choose.jpg" alt="" class="what-to-choose__bg-image lazyload">
+                    </div>
+                    <svg width="14" height="14" aria-hidden="true" class="icon-question">
+                        <use xlink:href="#question"></use>
+                    </svg>
+                    <div class="what-to-choose__row">
+                        <h3 class="what-to-choose__title">
+                            Как подобрать подходящую модель?
+                        </h3>
+                        <div class="what-to-choose__read">
+                            <span class="what-to-choose__read-text">
+
+
+                                читать
+                            </span>
+                            <svg width="14" height="14" aria-hidden="true" class="icon-diagonal-arrow">
+                                <use xlink:href="#diagonal-arrow"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <div class="catalog-page__layout">
+            <div class="catalog-page__sidebar">
+                <form action="/" method="GET" class="catalog-page__filters">
+                    <div class="catalog-page__filters-categories">
+                        <ul class="catalog-page__filters-categories-list">
+                            <li class="catalog-page__filters-categories-list-item active">
+                                <a href="#" class="catalog-page__filters-categories-link">
+                                    Новые льдозаливочные машины
+                                    <span class="catalog-page__filters-categories-count">
+                                        20
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="catalog-page__filters-categories-list-item">
+                                <a href="#" class="catalog-page__filters-categories-link">
+                                    Льдозаливочные машины с пробегом
+                                    <span class="catalog-page__filters-categories-count">
+                                        10
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="catalog-page__filters-categories-list-item">
+                                <a href="#" class="catalog-page__filters-categories-link">
+                                    Машины для подрезки льда у борта
+                                    <span class="catalog-page__filters-categories-count">
+                                        5
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="catalog-page__reset-btn" type="reset">
+                        <svg width="14" height="14" aria-hidden="true" class="icon-close">
+                            <use xlink:href="#close"></use>
+                        </svg>
+                        Сбросить все фильтры
+                    </button>
+                    <div class="catalog-page__filters-blocks">
+                        <div class="catalog-page__filters-block">
+                            <h3 class="catalog-page__filters-block-heading">
+                                Бренд
+                            </h3>
+                            <div class="catalog-page__filters-brands">
+                                <label class="catalog-page__filters-brands-checkbox">
+                                    <input type="radio" name="brand" class="catalog-page__filters-brands-checkbox-input"
+                                        checked="">
+                                    <span class="catalog-page__filters-brands-checkbox-content">
+                                        Все
+                                    </span>
+                                </label>
+                                <label class="catalog-page__filters-brands-checkbox">
+                                    <input type="radio" name="brand"
+                                        class="catalog-page__filters-brands-checkbox-input">
+                                    <span class="catalog-page__filters-brands-checkbox-content">
+                                        Zamboni
+                                    </span>
+                                </label>
+                                <label class="catalog-page__filters-brands-checkbox">
+                                    <input type="radio" name="brand"
+                                        class="catalog-page__filters-brands-checkbox-input">
+                                    <span class="catalog-page__filters-brands-checkbox-content">
+                                        ENGO
+                                    </span>
+                                </label>
+                                <label class="catalog-page__filters-brands-checkbox">
+                                    <input type="radio" name="brand"
+                                        class="catalog-page__filters-brands-checkbox-input">
+                                    <span class="catalog-page__filters-brands-checkbox-content">
+                                        Olympia
+                                    </span>
+                                </label>
+                                <label class="catalog-page__filters-brands-checkbox">
+                                    <input type="radio" name="brand"
+                                        class="catalog-page__filters-brands-checkbox-input">
+                                    <span class="catalog-page__filters-brands-checkbox-content">
+                                        WM
+                                    </span>
+                                </label>
+                                <label class="catalog-page__filters-brands-checkbox">
+                                    <input type="radio" name="brand"
+                                        class="catalog-page__filters-brands-checkbox-input">
+                                    <span class="catalog-page__filters-brands-checkbox-content">
+                                        Форвард
+                                    </span>
+                                </label>
+                                <label class="catalog-page__filters-brands-checkbox">
+                                    <input type="radio" name="brand"
+                                        class="catalog-page__filters-brands-checkbox-input">
+                                    <span class="catalog-page__filters-brands-checkbox-content">
+                                        N-Ice
+                                    </span>
+                                </label>
+                                <label class="catalog-page__filters-brands-checkbox">
+                                    <input type="radio" name="brand"
+                                        class="catalog-page__filters-brands-checkbox-input">
+                                    <span class="catalog-page__filters-brands-checkbox-content">
+                                        УАЗ
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="catalog-page__main">
+                <div class="catalog-page__sorting">
+                    <h4 class="catalog-page__sorting-heading">
+                        Сортировать:
+                    </h4>
+                    <div class="catalog-page__sorting-links">
+                        <a href="#" class="catalog-page__sorting-link">
+                            по популярности
+                        </a>
+                        <a href="#" class="catalog-page__sorting-link active">
+                            по площади обработки
+                            <svg width="14" height="14" aria-hidden="true" class="icon-sort">
+                                <use xlink:href="#sort"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <ul class="catalog-page__results-list">
+                    <li class="catalog-page__results-list-item">
+                        <a href="#" class="catalog-card">
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{{/content}}
+{{/extend}}

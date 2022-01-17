@@ -24,6 +24,7 @@ import introMarkers from './introMarkers';
 import introSlider from './introSlider';
 import helpMobileSelect from './helpMobileSelect';
 import reviewsMobileSlider from './reviewsMobileSlider';
+import comparison from './comparison';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -50,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
     introSlider();
     helpMobileSelect();
     reviewsMobileSlider();
+    comparison();
 });
 
 document.addEventListener('lazyloaded', () => {
