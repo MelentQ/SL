@@ -40,16 +40,20 @@
                                         </div>
                                     </a>
                                     <a href="#" class="intro__details-link">
-                                        Подробнее<br>
-                                        о Zamboni 546
+                                        <span class="intro__details-link-content">
+                                            <span>
+                                                Подробнее<br>
+                                                о Zamboni 546
+                                            </span>
+                                        </span>
                                         <svg width="14" height="14" aria-hidden="true" class="icon-diagonal-arrow">
                                             <use xlink:href="#diagonal-arrow"></use>
                                         </svg>
                                     </a>
                                 </div>
                                 <div class="intro__slider-card-illustration">
-                                    <img data-src="img/intro-illustration.webp" alt=""
-                                        class="intro__slider-card-illustration-image lazyload">
+                                    <img src="img/intro-illustration.webp" alt=""
+                                        class="intro__slider-card-illustration-image">
 
                                     <div class="intro__slider-card-illustration-items">
                                         <div class="intro__slider-card-illustration-item" style="left: 24%; top: 27%;">
@@ -255,16 +259,22 @@
                                         </div>
                                     </a>
                                     <a href="#" class="intro__details-link">
-                                        Подробнее<br>
-                                        о Zamboni 546
+                                        <span class="intro__details-link-content">
+
+
+                                            <span>
+                                                Подробнее<br>
+                                                о Zamboni 546
+                                            </span>
+                                        </span>
                                         <svg width="14" height="14" aria-hidden="true" class="icon-diagonal-arrow">
                                             <use xlink:href="#diagonal-arrow"></use>
                                         </svg>
                                     </a>
                                 </div>
                                 <div class="intro__slider-card-illustration">
-                                    <img data-src="img/intro-illustration.webp" alt=""
-                                        class="intro__slider-card-illustration-image lazyload">
+                                    <img src="img/intro-illustration.webp" alt=""
+                                        class="intro__slider-card-illustration-image">
 
                                     <div class="intro__slider-card-illustration-items">
                                         <div class="intro__slider-card-illustration-item" style="left: 24%; top: 27%;">
@@ -470,16 +480,20 @@
                                         </div>
                                     </a>
                                     <a href="#" class="intro__details-link">
-                                        Подробнее<br>
-                                        о Zamboni 546
+                                        <span class="intro__details-link-content">
+                                            <span>
+                                                Подробнее<br>
+                                                о Zamboni 546
+                                            </span>
+                                        </span>
                                         <svg width="14" height="14" aria-hidden="true" class="icon-diagonal-arrow">
                                             <use xlink:href="#diagonal-arrow"></use>
                                         </svg>
                                     </a>
                                 </div>
                                 <div class="intro__slider-card-illustration">
-                                    <img data-src="img/intro-illustration.webp" alt=""
-                                        class="intro__slider-card-illustration-image lazyload">
+                                    <img src="img/intro-illustration.webp" alt=""
+                                        class="intro__slider-card-illustration-image">
 
                                     <div class="intro__slider-card-illustration-items">
                                         <div class="intro__slider-card-illustration-item" style="left: 24%; top: 27%;">
@@ -665,20 +679,26 @@
                         <use xlink:href="#arrow-right"></use>
                     </svg>
                 </button>
+                <div class="slider-pagination intro__slider-pagination">
+
+                </div>
+                <a href="#" class="blue-btn intro__consultation-btn">
+                    Заявка на консультацию
+                </a>
             </div>
             <div class="intro__help-to-choose">
                 <h4 class="intro__help-to-choose-heading">
                     Поможем с выбором лучшей
                     модели под ваши цели
                 </h4>
-                <form action="/" method="POST" class="intro__help-to-choose-form">
+                <form action="/" method="POST" class="intro__help-to-choose-form" data-need-validation="">
                     <div class="intro__help-to-choose-form-input-wrapper">
                         <input type="text" name="name" class="text-input intro__help-to-choose-form-input"
                             placeholder="Имя" required="">
                     </div>
                     <div class="intro__help-to-choose-form-input-wrapper">
-                        <input type="tel" name="phone" class="text-input intro__help-to-choose-form-input"
-                            placeholder="+7 000 000-00-00" required="">
+                        <input type="tel" name="phone" class="text-input intro__help-to-choose-form-input js-phone-input"
+                            placeholder="+7 000 000-00-00" required="" data-parsley-phone="">
                     </div>
                     <button class="blue-btn">
                         Отправить заявку
@@ -5056,7 +5076,7 @@
                     Получите консультацию<br>
                     эксперта сейчас
                 </h3>
-                <form action="/" method="POST" class="reviews__consultation-form">
+                <form action="/" method="POST" class="reviews__consultation-form" data-need-validation="">
                     <div class="reviews__consultation-form-input-wrapper">
                         <input type="text" name="name" placeholder="Имя"
                             class="text-input reviews__consultation-form-input" required="">

@@ -1,6 +1,6 @@
-import { Swiper, Navigation, Parallax } from 'swiper';
+import { Swiper, Navigation, Parallax, Pagination } from 'swiper';
 
-Swiper.use([Navigation, Parallax]);
+Swiper.use([Navigation, Parallax, Pagination]);
 
 export default function introSlider() {
     const elements = Array.from(document.querySelectorAll('.js-intro-slider'));
@@ -13,6 +13,11 @@ export default function introSlider() {
             watchOverflow: true,
             speed: 1000,
             threshold: 10,
+            pagination: {
+                el: element.querySelector('.slider-pagination'),
+                type: 'bullets',
+                clickable: true
+            },
             parallax: true,
             navigation: {
                 nextEl: element.querySelector('.intro__slider-arrow--next'),

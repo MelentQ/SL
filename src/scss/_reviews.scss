@@ -354,7 +354,7 @@
     background: #ffffff;
     border-radius: 2.5rem;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 7rem;
 
     @include breakpoint(mobile) {
@@ -375,6 +375,7 @@
     margin-right: 3rem;
     line-height: 115%;
     color: #011f3a;
+    margin-top: -.8rem;
 
     @include breakpoint(mobile) {
         font-style: normal;

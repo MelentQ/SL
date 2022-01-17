@@ -192,6 +192,7 @@
 .help__form-checkbox {
     display: block;
     cursor: pointer;
+    user-select: none;
 }
 
 .help__form-checkbox-content-wrapper {

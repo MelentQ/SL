@@ -23,6 +23,10 @@
         color: #011f3a;
     }
 
+    &.parsley-error {
+        border-color: var(--primary-color);
+    }
+
     &--blue {
         border-color: var(--primary-color);
         color: white;
