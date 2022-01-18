@@ -60,17 +60,25 @@
     backface-visibility: hidden;
     transform: translateZ(0);
 
-    @include breakpoint(mobile) {
-        display: none;
+    &::before {
+        content: '';
+        width: 1px;
+        padding-bottom: 56.25%;
     }
     &:link,
     &:visited {
         color: white;
     }
-    &::before {
-        content: '';
-        width: 1px;
-        padding-bottom: 56.25%;
+
+    .no-touch &:hover,
+    .touch &:active {
+        .reviews__selected-review-play {
+            background-color: var(--primary-color-hover);
+        }
+    }
+
+    @include breakpoint(mobile) {
+        display: none;
     }
 }
 
@@ -167,7 +175,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    transition: background-color .2s;
     svg {
         width: 4.5rem;
         height: 4.5rem;
@@ -194,6 +202,13 @@
 .reviews__other-reviews-card {
     display: flex;
     align-items: center;
+
+    .no-touch &:hover,
+    .touch &:active {
+        .reviews__other-reviews-card-play {
+            background-color: var(--primary-color-hover);
+        }
+    }
 }
 
 .reviews__other-reviews-card-image-container {
@@ -232,7 +247,7 @@
     align-items: center;
     justify-content: center;
     background-color: var(--primary-color);
-
+    transition: background-color .2s;
     svg {
         width: 1.4rem;
         height: 1.4rem;
@@ -428,6 +443,13 @@
     &:visited {
         color: white;
     }
+
+    .no-touch &:hover,
+    .touch &:active {
+        .reviews__mobile-slider-card-play {
+            background-color: var(--primary-color-hover);
+        }
+    }
 }
 
 .reviews__mobile-slider-card-content {
@@ -478,7 +500,7 @@
     z-index: 2;
     width: 4rem;
     height: 4rem;
-
+    transition: background-color .2s;
     svg {
         width: 1.5rem;
         height: 1.5rem;
