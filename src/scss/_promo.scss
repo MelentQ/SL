@@ -140,3 +140,12 @@
         width: 100%;
     }
 }
+
+
+.promo__all-specs-btn {
+    margin-top: 1.5rem;
+    width: 100%;
+    @include breakpointMF(small-tablet) {
+        display: none;
+    }
+}
