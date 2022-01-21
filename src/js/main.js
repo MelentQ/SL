@@ -30,6 +30,7 @@ import mobileSortBtn from './mobileSortBtn';
 import catalogSidebar from './catalogSidebar';
 import fixedHeader from './fixedHeader';
 import menu from './menu';
+import headerCatalogDropdown from './headerCatalogDropdown';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -62,6 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
     catalogSidebar();
     fixedHeader();
     menu();
+    headerCatalogDropdown();
 });
 
 document.addEventListener('lazyloaded', () => {
