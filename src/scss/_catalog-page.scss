@@ -201,11 +201,25 @@
     margin-right: 14rem;
     flex-shrink: 0;
 
+    @include breakpointMF(small-tablet) {
+        will-change: min-height;
+    }
+   
     @include breakpoint(mobile) {
         width: 100%;
         margin: 0;
         flex-shrink: 1;
     }
+}
+
+.catalog-page__sidebar-inner {
+
+    @include breakpointMF(small-tablet) {
+        transform: translate(0, 0); /* For browsers don't support translate3d. */
+        transform: translate3d(0, 0, 0);
+        will-change: position, transform;
+    }
+   
 }
 
 .catalog-page__main {

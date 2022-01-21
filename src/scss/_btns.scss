@@ -123,7 +123,6 @@
         color: var(--primary-color);
     }
 
-
     &--white {
         border-color: white;
         color: white;
@@ -152,7 +151,6 @@
         }
     }
 }
-
 
 .arrow-btn-small {
     display: inline-flex;
@@ -183,12 +181,35 @@
         fill: currentColor;
     }
 
-
     .no-touch &:hover,
     .touch &:active {
         color: var(--primary-color);
     }
 
+    &--filled {
+        background-color: var(--primary-color);
+        color: white;
+
+        .no-touch &:hover,
+        .touch &:active {
+            color: white;
+            background-color: var(--primary-color-hover);
+        }
+    }
+
+    &--green {
+        color: white;
+        background: #4fcd3b;
+        border-color: #4fcd3b;
+        &:link,
+        &:visited {
+            color: white;
+        }
+        .no-touch &:hover,
+        .touch &:active {
+            background: #4fcd3b;
+        }
+    }
 
     &--white {
         border-color: white;
@@ -296,6 +317,14 @@
         .no-touch &:hover,
         .touch &:active {
             background-color: var(--secondary-color-hover);
+        }
+    }
+
+    &--green {
+        background: #4fcd3b;
+        .no-touch &:hover,
+        .touch &:active {
+            background: #4fcd3b;
         }
     }
     svg {
