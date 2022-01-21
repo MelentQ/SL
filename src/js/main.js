@@ -31,6 +31,7 @@ import catalogSidebar from './catalogSidebar';
 import fixedHeader from './fixedHeader';
 import menu from './menu';
 import headerCatalogDropdown from './headerCatalogDropdown';
+import comparisonAnimation from './comparisonAnimation';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -64,6 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
     fixedHeader();
     menu();
     headerCatalogDropdown();
+    comparisonAnimation();
 });
 
 document.addEventListener('lazyloaded', () => {

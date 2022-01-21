@@ -12,6 +12,7 @@ export default function catalogBrandsSlider() {
             watchOverflow: true,
             speed: 700,
             spaceBetween: 30,
+            threshold: 10,
             watchSlidesProgress: true,
             pagination: {
                 el: element.querySelector('.slider-pagination'),

@@ -418,59 +418,7 @@
     gap: 1.5rem;
 }
 
-.outline-btn {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-self: flex-start;
-    border: 0.2rem solid #148eff;
-    border-radius: 1.5rem;
-    padding: 1.7rem 3rem;
-    flex-shrink: 0;
-    color: transparent;
 
-    &:link,
-    &:visited {
-        color: transparent;
-    }
-    @include breakpoint(mobile) {
-        padding: 1.3rem 2.5rem;
-        border-radius: 1rem;
-    }
-    svg {
-        width: 1.7rem;
-        height: 1.7rem;
-        fill: var(--text-color);
-        transition: fill 0.2s;
-
-        
-
-        @include breakpoint(mobile) {
-            width: 1.5rem;
-            height: 1.5rem;
-        }
-    }
-
-    .no-touch &:hover,
-    .touch &:active {
-        svg {
-            fill: var(--primary-color);
-        }
-    }
-
-    &:active,
-    &.active {
-        color: var(--primary-color);
-        svg {
-            fill: var(--primary-color);
-        }
-    }
-
-   
-
-    
-}
 
 .catalog__brand-slider-card-info {
     width: 50%;
