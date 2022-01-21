@@ -19,6 +19,10 @@
     background: linear-gradient(0deg, rgba(2, 21, 39, 0.25), rgba(2, 21, 39, 0.25)), linear-gradient(85.67deg, #1764aa 0.44%, #2bc8eb 100%);
     box-shadow: 0px 0px 7.5rem rgba(0, 0, 0, 0.05);
 
+    &--compact {
+        padding: 5rem;
+    }
+
     @include breakpoint(mobile) {
         padding: 1.5rem;
         border-radius: 1.5rem;
@@ -49,6 +53,10 @@
     max-width: 120rem;
     margin-bottom: 6rem;
 
+    .promo__card--compact & {
+        margin-bottom: 3rem;
+    }
+
     @include breakpoint(mobile) {
         font-style: normal;
         font-weight: 600;
@@ -59,24 +67,33 @@
 }
 
 .promo__advantages-list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-gap: 2.2rem;
     margin-bottom: 6rem;
+
+    .promo__card--compact & {
+
+        @include breakpointMF(small-tablet) {
+            width: 100%;
+            max-width: 73rem;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        
+    }
 
     @include breakpoint(mobile) {
         margin-bottom: 3rem;
-
-        
+        grid-gap: 1.5rem;
+        grid-template-columns: minmax(0, 1fr);
     }
 }
 
 .promo__advantages-item {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 2.2rem;
-    @include breakpoint(mobile) {
-        margin-bottom: 1.5rem;
 
+    @include breakpoint(mobile) {
         display: none;
 
         &:nth-child(1),
@@ -134,6 +151,19 @@
     }
 }
 
+.promo__btns {
+    .promo__card--compact & {
+        @include breakpointMF(small-tablet) {
+            display: flex;
+            align-items: center;
+            gap: 2.5rem;
+        }
+    }
+    @include breakpoint(mobile) {
+        margin-top: auto;
+    }
+}
+
 .promo__btn {
     @include breakpoint(mobile) {
         margin-top: auto;
@@ -141,11 +171,19 @@
     }
 }
 
-
 .promo__all-specs-btn {
-    margin-top: 1.5rem;
-    width: 100%;
+    .promo__card--compact & {
+        @include breakpointMF(small-tablet) {
+            display: inline-flex;
+            order: -1;
+        }
+    }
     @include breakpointMF(small-tablet) {
         display: none;
+    }
+
+    @include breakpoint(mobile) {
+        margin-top: 1.5rem;
+        width: 100%;
     }
 }

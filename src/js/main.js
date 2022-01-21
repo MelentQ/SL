@@ -25,6 +25,8 @@ import introSlider from './introSlider';
 import helpMobileSelect from './helpMobileSelect';
 import reviewsMobileSlider from './reviewsMobileSlider';
 import comparison from './comparison';
+import catalogCardsSliders from './catalogCardsSliders';
+import mobileSortBtn from './mobileSortBtn';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -52,6 +54,8 @@ document.addEventListener('DOMContentLoaded', function () {
     helpMobileSelect();
     reviewsMobileSlider();
     comparison();
+    catalogCardsSliders();
+    mobileSortBtn();
 });
 
 document.addEventListener('lazyloaded', () => {

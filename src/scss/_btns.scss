@@ -13,12 +13,13 @@
     border-radius: 1.5rem;
     flex-shrink: 0;
     white-space: nowrap;
-
+    justify-content: center;
+    text-align: center;
     @include breakpoint(mobile) {
         font-weight: 600;
         font-size: 1.5rem;
         line-height: 100%;
-        padding: 1.5rem 3rem;
+        padding: 1.5rem 2rem;
         border-radius: 1rem;
     }
     &:link,
@@ -130,6 +131,11 @@
         &:visited {
             color: white;
         }
+
+        .no-touch &:hover,
+        .touch &:active {
+            color: white;
+        }
     }
 
     @include breakpoint(mobile) {
@@ -143,6 +149,72 @@
             width: 1.5rem;
             height: 1.5rem;
             margin-left: 1.5rem;
+        }
+    }
+}
+
+
+.arrow-btn-small {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.2rem solid var(--primary-color);
+    padding: 1.7rem 3rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    border-radius: 1.5rem;
+    flex-shrink: 0;
+    white-space: nowrap;
+    align-self: flex-start;
+    transition: background-color 0.2s, color 0.2s;
+    color: var(--text-color);
+    &:link,
+    &:visited {
+        color: var(--text-color);
+    }
+    svg {
+        width: 1.7rem;
+        height: 1.7rem;
+        flex-shrink: 0;
+        margin-left: 1rem;
+        fill: currentColor;
+    }
+
+
+    .no-touch &:hover,
+    .touch &:active {
+        color: var(--primary-color);
+    }
+
+
+    &--white {
+        border-color: white;
+        color: white;
+        &:link,
+        &:visited {
+            color: white;
+        }
+
+        .no-touch &:hover,
+        .touch &:active {
+            color: white;
+        }
+    }
+
+    @include breakpoint(mobile) {
+        padding: 1.3rem 2rem;
+        border-radius: 1.5rem;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 100%;
+        border-radius: 1rem;
+        svg {
+            width: 1.5rem;
+            height: 1.5rem;
+            margin-left: 1rem;
         }
     }
 }
