@@ -253,7 +253,7 @@
     color: var(--primary-color);
     cursor: pointer;
     justify-content: space-between;
-  
+
     @include breakpointMF(small-tablet) {
         display: none;
     }
@@ -269,7 +269,6 @@
         fill: var(--primary-color);
         display: block;
     }
-   
 
     @include breakpoint(mobile) {
         position: absolute;
@@ -285,8 +284,6 @@
             fill: var(--primary-color);
             margin: 0;
         }
-
-        
     }
 }
 
@@ -339,9 +336,15 @@
     display: grid;
     grid-template-columns: 1fr 20rem 1fr;
 
+    
+
     @include breakpoint(mobile) {
         grid-template-columns: repeat(4, minmax(0, 1fr));
         grid-gap: 1.5rem;
+
+        &--watch-models {
+            display: none;
+        }
     }
 }
 
@@ -384,6 +387,45 @@
             grid-column: 3 / 5;
             justify-self: flex-end;
             grid-row: 1 / 2;
+        }
+    }
+}
+
+.comparison__watch-model {
+    justify-self: center;
+    display: inline-flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 100%;
+    margin-bottom: 2.5rem;
+
+    color: var(--primary-color);
+    &:link,
+    &:visited {
+        color: var(--primary-color);
+    }
+
+    svg {
+        flex-shrink: 0;
+        margin-left: 1.5rem;
+        width: 1.7rem;
+        height: 1.7rem;
+        fill: var(--primary-color);
+    }
+
+    @include underline();
+
+
+    @include breakpointMF(small-tablet) {
+        &:first-child {
+            grid-column: 1 / 2;
+        }
+    
+        &:last-child {
+            grid-column: 3 / 4;
         }
     }
 }
@@ -440,8 +482,6 @@
     height: 6.5rem;
     cursor: pointer;
 
-  
-
     @include breakpoint(mobile) {
         height: 3.5rem;
         padding: 0 1rem;
@@ -450,7 +490,6 @@
         font-weight: 600;
         font-size: 1.3rem;
         line-height: 100%;
-        
     }
 }
 
@@ -572,25 +611,21 @@
             background: #f8fbff;
             width: 0.5rem;
             border-radius: 0.5rem;
-    
-            
         }
-    
+
         &::-webkit-scrollbar-thumb {
             background-color: var(--primary-color);
             border-radius: 0.5rem;
         }
-    
+
         &::-webkit-scrollbar-button {
             display: none;
         }
-    
+
         &::-webkit-scrollbar-track {
             background-color: transparent;
         }
     }
-
-   
 }
 
 .comparison__product-select-checkbox-input:checked ~ .comparison__product-select-checkbox-content {
@@ -832,7 +867,6 @@
     position: relative;
 }
 
-
 .comparison__tab {
     position: absolute;
     left: 0;
@@ -841,14 +875,14 @@
     height: auto;
     opacity: 0;
     visibility: hidden;
-    transition: opacity .4s, visibility 0s linear .4s;
+    transition: opacity 0.4s, visibility 0s linear 0.4s;
 
     z-index: 5;
 
     &.active {
         opacity: 1;
         visibility: inherit;
-        transition: opacity .4s, visibility .4s;
+        transition: opacity 0.4s, visibility 0.4s;
         z-index: 10;
         position: relative;
     }
