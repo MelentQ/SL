@@ -28,6 +28,8 @@ html {
     font-size: clamp(5px, 0.52vw, 25px);
     @include noHighlight();
 
+    // font-size: 10px;
+
     @include breakpoint(mobile) {
         font-size: 10px;
     }
