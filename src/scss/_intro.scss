@@ -116,6 +116,9 @@
 
     @include breakpoint(mobile) {
         padding: 0;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
     }
 }
 
@@ -160,9 +163,10 @@
     @include breakpoint(mobile) {
         font-style: normal;
         font-weight: 800;
-        font-size: 6rem;
+        font-size: 4.5rem;
         line-height: 100%;
         -webkit-text-stroke-width: 1.5px;
+        margin-bottom: 0.6rem;
     }
 }
 
@@ -172,6 +176,12 @@
     font-size: 2.5rem;
     line-height: 125%;
     color: var(--brand-color, #148eff);
+
+    @include breakpoint(mobile) {
+        font-size: 1.6rem;
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
+    }
     // transition: all .3s;
     // opacity: 0;
 
@@ -187,13 +197,16 @@
     transform: translateX(-50%);
     bottom: 10rem;
     width: 89rem;
-    transition: transform 1s;
 
-    .swiper-slide-prev & {
-        transform: translateX(20%);
-    }
-    .swiper-slide-next & {
-        transform: translateX(-120%);
+    @include breakpointMF(small-tablet) {
+        transition: transform 1s;
+
+        .swiper-slide-prev & {
+            transform: translateX(20%);
+        }
+        .swiper-slide-next & {
+            transform: translateX(-120%);
+        }
     }
 
     @include breakpoint(mobile) {
@@ -204,9 +217,11 @@
         position: relative;
         top: auto;
         left: auto;
+        bottom: auto;
         transform: none;
-        grid-column: 1 / -1;
+
         margin-top: 0;
+        margin-top: auto;
     }
 }
 
@@ -280,6 +295,15 @@
 
     &--mobile {
         display: none;
+    }
+
+    @include breakpoint(mobile) {
+        &.intro__slider-card-illustration-item--mobile {
+            display: block;
+        }
+        &:not(.intro__slider-card-illustration-item--mobile) {
+            display: none;
+        }
     }
 
     .swiper-slide-active & {
@@ -487,7 +511,7 @@
     height: auto;
     opacity: 0;
     visibility: hidden;
-    transition: opacity .3s, visibility 0s linear .3s;
+    transition: opacity 0.3s, visibility 0s linear 0.3s;
     z-index: 5;
 
     &.active {
@@ -495,7 +519,7 @@
         z-index: 10;
         opacity: 1;
         visibility: inherit;
-        transition: opacity .3s, visibility .3s;
+        transition: opacity 0.3s, visibility 0.3s;
     }
 }
 
@@ -539,10 +563,11 @@
         line-height: 100%;
         margin: 0;
         align-items: center;
-
+        display: flex;
+        justify-content: center;
         align-self: center;
         justify-self: center;
-
+        width: 100%;
         svg {
             margin-top: 0;
         }
@@ -589,7 +614,11 @@
     z-index: 30;
     bottom: 22rem;
     width: 30rem;
-    
+    pointer-events: none;
+
+    @include breakpoint(mobile) {
+        display: none;
+    }
 }
 
 .intro__slider-fraction-pagination-card {
@@ -608,7 +637,6 @@
     align-items: center;
     justify-content: flex-end;
     gap: 0.4rem;
-  
 }
 
 .intro__slider-details {
@@ -628,6 +656,9 @@
         align-self: stretch;
         position: static;
         margin-top: 2rem;
+        right: auto;
+        top: auto;
+        width: auto;
     }
 }
 
