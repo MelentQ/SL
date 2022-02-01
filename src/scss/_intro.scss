@@ -620,6 +620,10 @@
     width: 30rem;
     pointer-events: none;
 
+    .swiper-slide {
+        pointer-events: none !important;
+    }
+
     @include breakpoint(mobile) {
         display: none;
     }

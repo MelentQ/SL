@@ -204,7 +204,7 @@
     @include breakpointMF(small-tablet) {
         will-change: min-height;
     }
-   
+
     @include breakpoint(mobile) {
         width: 100%;
         margin: 0;
@@ -213,13 +213,11 @@
 }
 
 .catalog-page__sidebar-inner {
-
     @include breakpointMF(small-tablet) {
         transform: translate(0, 0); /* For browsers don't support translate3d. */
         transform: translate3d(0, 0, 0);
         will-change: position, transform;
     }
-   
 }
 
 .catalog-page__main {
@@ -635,12 +633,12 @@
         z-index: 40;
         opacity: 0;
         visibility: hidden;
-        transition: opacity .3s, visibility 0s linear .3s;
+        transition: opacity 0.3s, visibility 0s linear 0.3s;
 
         .sorting-shown & {
             opacity: 1;
             visibility: inherit;
-            transition: opacity .3s, visibility .3s;
+            transition: opacity 0.3s, visibility 0.3s;
         }
     }
 }
@@ -920,5 +918,62 @@
         width: 100%;
         display: flex;
         margin-bottom: 2.5rem;
+    }
+}
+
+.catalog-page__best-brands {
+    width: max-content;
+    flex-shrink: 0;
+    margin-left: 5rem;
+
+    border: 0.2rem solid var(--primary-color);
+    border-width: 2px;
+    border-radius: 2rem;
+    border-bottom-left-radius: 0;
+  
+    position: relative;
+    padding: 2rem;
+    display: flex;
+    align-items: flex-start;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 125%;
+    max-width: 43rem;
+    width: 100%;
+
+    svg {
+        flex-shrink: 0;
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 1rem;
+        fill: var(--primary-color);
+    }
+
+    @include breakpoint(mobile) {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 115%;
+        margin-bottom: 3rem;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        left: -0.2rem;
+        top: 100%;
+        margin-top: 0rem;
+        background-image: url('../img/tail.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left top;
+        margin-top: 0rem;
+
+        pointer-events: none;
+        user-select: none;
+        width: 23px;
+        height: 11.3px;
+        left: -2px;
+        margin-top: -0.5px;
     }
 }
