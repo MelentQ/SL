@@ -84,6 +84,8 @@
             margin-left: 1rem;
         }
     }
+
+    @include underline();
 }
 
 .about__numbers {

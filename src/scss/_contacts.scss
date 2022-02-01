@@ -200,6 +200,8 @@
         fill: currentColor;
         margin-left: 1rem;
     }
+
+    @include underline();
 }
 
 .contacts__map-wrapper {
