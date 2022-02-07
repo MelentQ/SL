@@ -10,8 +10,10 @@
 
 .intro__content {
     min-height: 100vh;
+    min-height: min(100vh, 105rem);
     display: flex;
     flex-direction: column;
+    position: relative;
 
     @include breakpoint(mobile) {
         min-height: auto;
