@@ -25,7 +25,7 @@
     "custom-event-polyfill": "^1.0.7",
     "dayjs": "^1.10.6",
     "detect-it": "^4.0.1",
-    "gsap": "^3.7.1",
+    "gsap": "npm:@gsap/shockingly@^3.9.1",
     "imagesloaded": "^4.1.4",
     "inputmask": "^5.0.6",
     "lazysizes": "^5.3.2",

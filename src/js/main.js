@@ -32,6 +32,8 @@ import fixedHeader from './fixedHeader';
 import menu from './menu';
 import headerCatalogDropdown from './headerCatalogDropdown';
 import comparisonAnimation from './comparisonAnimation';
+import animatedHeadings from './animatedHeaders';
+import blocksReveal from './blockReveal';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -66,6 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
     menu();
     headerCatalogDropdown();
     comparisonAnimation();
+    blocksReveal();
 });
 
 document.addEventListener('lazyloaded', () => {
@@ -75,5 +78,6 @@ document.addEventListener('lazyloaded', () => {
 window.addEventListener('load', function () {
     document.body.classList.add('loaded');
     ScrollTrigger.refresh();
+    animatedHeadings();
     setTimeout(() => document.body.classList.add('animatable'), 300);
 });
