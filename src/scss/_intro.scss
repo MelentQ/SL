@@ -404,6 +404,7 @@
     &::before {
         content: '';
         left: 100%;
+        margin-left: -1px;
         top: 50%;
         transform: translateY(-50%);
         width: 0;
