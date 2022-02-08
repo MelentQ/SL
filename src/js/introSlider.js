@@ -33,6 +33,7 @@ export default function introSlider() {
             speed: 1000,
             threshold: 10,
             longSwipesRatio: 0.3,
+            slideToClickedSlide: true,
             pagination: {
                 el: element.querySelector('.slider-pagination'),
                 type: 'bullets',

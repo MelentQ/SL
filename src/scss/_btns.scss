@@ -361,6 +361,10 @@
     flex-shrink: 0;
     color: transparent;
     background-color: #fff;
+
+    &--large {
+        padding: 2.5rem;
+    }
     &:link,
     &:visited {
         color: transparent;
@@ -368,6 +372,10 @@
     @include breakpoint(mobile) {
         padding: 1.3rem 2.5rem;
         border-radius: 1rem;
+
+        &--large {
+            padding: 1.7rem;
+        }
     }
     svg {
         width: 1.7rem;

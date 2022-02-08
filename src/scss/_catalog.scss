@@ -19,13 +19,17 @@
 
 .catalog__small-heading {
     grid-column: span 2;
-    opacity: 0;
-    visibility: hidden;
-    &.revealed {
-        opacity: 1;
-        visibility: inherit;
-        transition: opacity .2s, visibility .2s;
+
+    &.js-block-to-reveal {
+        opacity: 0;
+        visibility: hidden;
+        &.revealed {
+            opacity: 1;
+            visibility: inherit;
+            transition: opacity .2s, visibility .2s;
+        }
     }
+   
     @include breakpoint(mobile) {
         grid-column: 1 / -1;
         margin-bottom: 1rem;
@@ -47,19 +51,23 @@
     display: grid;
     grid-template-columns: repeat(8, minmax(0, 1fr));
     margin-bottom: 6.5rem;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(5rem);
-    &.revealed {
-        opacity: 1;
-        visibility: inherit;
-        transition: opacity .4s, visibility .4s, transform .4s ease-out;
-        transform: translateY(0rem);
+
+    &.js-block-to-reveal {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(5rem);
+        &.revealed {
+            opacity: 1;
+            visibility: inherit;
+            transition: opacity .4s, visibility .4s, transform .4s ease-out;
+            transform: translateY(0rem);
+        }
     }
+    
     @include breakpoint(mobile) {
         grid-template-columns: repeat(3, minmax(0, 1fr));
         padding: 0.5rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 2rem;
         grid-gap: 1rem;
     }
 }
@@ -175,15 +183,19 @@
 
 .catalog__tabs {
     position: relative;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(5rem);
-    &.revealed {
-        opacity: 1;
-        visibility: inherit;
-        transition: opacity .4s, visibility .4s, transform .4s ease-out;
-        transform: translateY(0rem);
+
+    &.js-block-to-reveal {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(5rem);
+        &.revealed {
+            opacity: 1;
+            visibility: inherit;
+            transition: opacity .4s, visibility .4s, transform .4s ease-out;
+            transform: translateY(0rem);
+        }
     }
+    
 }
 
 .catalog__tab-item {
@@ -197,6 +209,14 @@
     visibility: hidden;
     transition: opacity 0.4s, visibility 0s linear 0.4s;
 
+    &.active {
+        position: relative;
+        z-index: 10;
+        transition: opacity 0.4s ease 0.4s, visibility 0.4s ease 0.4s;
+        opacity: 1;
+        visibility: visible;
+    }
+
 
     @include breakpointMF(small-tablet) {
         .catalog__brand-slider {
@@ -207,11 +227,7 @@
         }
     
         &.active {
-            position: relative;
-            z-index: 10;
-            transition: opacity 0.4s ease 0.4s, visibility 0.4s ease 0.4s;
-            opacity: 1;
-            visibility: visible;
+            
             .catalog__brand-slider {
                 transform: translateX(0rem);
                 opacity: 1;

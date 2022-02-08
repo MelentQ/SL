@@ -20,7 +20,9 @@
 
     transition: transform 0.6s ease-out 1.2s, opacity 0.6s ease 1.2s, visibility 0.6s ease 1.2s, padding .2s;
 
-    body:not(.animatable) & {
+   
+
+    body:not(.animatable):not(.no-animated-header) & {
         opacity: 0;
         visibility: hidden;
         transform: translateY(-100%);

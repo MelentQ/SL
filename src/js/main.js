@@ -34,6 +34,11 @@ import headerCatalogDropdown from './headerCatalogDropdown';
 import comparisonAnimation from './comparisonAnimation';
 import animatedHeadings from './animatedHeaders';
 import blocksReveal from './blockReveal';
+import brandBlock from './brandBlock';
+import productGallery from './productGallery';
+import illustrationsSlider from './illustrations-slider';
+import productTabs from './productTabs';
+import complectationShowAll from './complectationShowAll';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -69,6 +74,11 @@ document.addEventListener('DOMContentLoaded', function () {
     headerCatalogDropdown();
     comparisonAnimation();
     blocksReveal();
+    brandBlock();
+    productGallery();
+    illustrationsSlider();
+    productTabs();
+    complectationShowAll();
 });
 
 document.addEventListener('lazyloaded', () => {

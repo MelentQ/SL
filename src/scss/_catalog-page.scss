@@ -950,13 +950,7 @@
         fill: var(--primary-color);
     }
 
-    @include breakpoint(mobile) {
-        font-style: normal;
-        font-weight: 600;
-        font-size: 1.5rem;
-        line-height: 115%;
-        margin-bottom: 3rem;
-    }
+  
     &::before {
         content: '';
         position: absolute;
@@ -975,5 +969,15 @@
         height: 11.3px;
         left: -2px;
         margin-top: -0.5px;
+    }
+
+    @include breakpoint(mobile) {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 115%;
+        margin-left: 0;
+        width: 100%;
+        margin-bottom: 1rem;
     }
 }
