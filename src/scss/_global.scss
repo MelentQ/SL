@@ -251,3 +251,18 @@ select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
     background-color: transparent;
 }
+
+
+
+.hide-on-mobile {
+    @include breakpoint(mobile) {
+        display: none;
+    }
+}
+
+
+.show-on-mobile {
+    @include breakpointMF(small-tablet) {
+        display: none;
+    }
+}
