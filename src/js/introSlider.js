@@ -17,6 +17,34 @@ export default function introSlider() {
             }
         });
 
+        const videoContainer = element.querySelector('.intro__video-slider > .swiper-container');
+
+        const playVideo = (slides, activeIndex) => {
+            Array.from(slides).forEach((slide, slideIndex) => {
+                const video = slide.querySelector('video');
+                if (slideIndex === activeIndex) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        };
+
+        const videoSlider = new Swiper(videoContainer, {
+            watchOverflow: true,
+            speed: 600,
+            // init: false,
+            allowTouchMove: false,
+            on: {
+                init: swiper => {
+                    playVideo(swiper.slides, swiper.activeIndex);
+                },
+                slideChange: swiper => {
+                    playVideo(swiper.slides, swiper.activeIndex);
+                }
+            }
+        });
+
         const linkLayers = Array.from(element.querySelectorAll('.intro__details-links-layer'));
 
         const setActiveLinkLayer = index => {
@@ -34,6 +62,7 @@ export default function introSlider() {
             threshold: 10,
             longSwipesRatio: 0.3,
             slideToClickedSlide: true,
+        
             pagination: {
                 el: element.querySelector('.slider-pagination'),
                 type: 'bullets',
@@ -47,52 +76,37 @@ export default function introSlider() {
             init: false,
             on: {
                 init: swiper => {
-                    setActiveLinkLayer(swiper.activeIndex);
+                    setActiveLinkLayer(swiper.realIndex);
+                    paginationSlider.slideTo(swiper.realIndex);
+                    videoSlider.slideTo(swiper.realIndex);
+
+                    console.log('Real index', swiper.realIndex);
                 },
                 slideChange: swiper => {
-                    setActiveLinkLayer(swiper.activeIndex);
+                    setActiveLinkLayer(swiper.realIndex);
+                    paginationSlider.slideTo(swiper.realIndex);
+                    videoSlider.slideTo(swiper.realIndex);
+
+                    console.log('Real index', swiper.realIndex);
                 },
-                slideNextTransitionStart: () => {
-                    paginationSlider.slideNext();
-                },
-                slidePrevTransitionStart: () => {
-                    paginationSlider.slidePrev();
+                slideNextTransitionStart: swiper => {},
+                slidePrevTransitionStart: swiper => {
+                    // paginationSlider.slideTo(swiper.realIndex);
+                    // videoSlider.slideTo(swiper.realIndex);
                 }
             }
         });
 
         mainSlider.init();
 
-        const videoContainer = element.querySelector('.intro__video-slider > .swiper-container');
+        if (element.hasAttribute('data-initial-slide')) {
+            const initialSlide = Number(element.getAttribute('data-initial-slide'));
 
-        const playVideo = (slides, activeIndex) => {
-            Array.from(slides).forEach((slide, slideIndex) => {
-                const video = slide.querySelector('video');
-                if (slideIndex === activeIndex) {
-                    video.play();
-                } else {
-                    video.pause();
-                }
-            });
-        };
+            mainSlider.slideTo(initialSlide, 0);
+        }
 
-        const videoSlider = new Swiper(videoContainer, {
-            watchOverflow: true,
-            speed: 600,
-            init: false,
-            allowTouchMove: false,
-            on: {
-                init: swiper => {
-                    playVideo(swiper.slides, swiper.activeIndex);
-                },
-                slideChange: swiper => {
-                    playVideo(swiper.slides, swiper.activeIndex);
-                }
-            }
-        });
+        // videoSlider.init();
 
-        videoSlider.init();
-
-        mainSlider.controller.control = [videoSlider];
+        // mainSlider.controller.control = [videoSlider];
     });
 }

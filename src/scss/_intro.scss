@@ -242,10 +242,14 @@
     @include breakpointMF(small-tablet) {
         transition: transform 1s;
 
-        .swiper-slide-prev & {
+      
+
+        .swiper-slide-prev &,
+        .swiper-slide-duplicate-prev & {
             transform: translateX(20%) !important;
         }
-        .swiper-slide-next & {
+        .swiper-slide-next &,
+        .swiper-slide-duplicate-next & {
             transform: translateX(-120%) !important;
         }
     }
@@ -877,7 +881,6 @@
     margin-top: 4rem;
     width: 100%;
 
-
     @include revealOnLoad();
     @include breakpointMF(small-tablet) {
         display: none;
@@ -887,3 +890,4 @@
         margin: 0;
     }
 }
+
