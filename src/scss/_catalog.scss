@@ -1,7 +1,7 @@
 .catalog {
     background: #f8fbff;
     padding: 10rem 0;
-
+    @include revealOnLoad();
     @include breakpoint(mobile) {
         padding: 5rem 0;
     }

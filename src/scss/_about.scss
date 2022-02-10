@@ -160,7 +160,7 @@
     color: var(--primary-color);
     overflow: hidden;
     -webkit-text-fill-color: white;
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-width: .2rem;
     -webkit-text-stroke-color: var(--primary-color);
 
     @include breakpoint(mobile) {
