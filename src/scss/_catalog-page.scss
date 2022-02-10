@@ -981,3 +981,14 @@
         margin-bottom: 1rem;
     }
 }
+
+
+.catalog-page__brand-list {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-gap: 10rem;
+
+    @include breakpoint(mobile) {
+        grid-gap: 5rem;
+    }
+}
