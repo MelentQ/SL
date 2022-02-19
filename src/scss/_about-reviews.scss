@@ -1,0 +1,114 @@
+.about-reviews {
+    margin-bottom: 10rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 5rem;
+    }
+}
+
+.about-reviews__heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 120%;
+    margin-bottom: 7rem;
+
+    @include breakpoint(mobile) {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 3rem;
+        line-height: 100%;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.about-reviews__slider {
+    margin-bottom: 10rem;
+    position: relative;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    @include breakpoint(mobile) {
+        margin-bottom: 4rem;
+    }
+   
+    .swiper-container {
+        overflow: visible;
+    }
+
+    @include breakpointMF(small-tablet) {
+        .swiper-slide {
+            width: 66rem;
+            padding-right: 3rem;
+            box-sizing: content-box;
+            .product-details__reviews-card {
+                box-sizing: border-box;
+            }
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+    }
+
+  
+}
+
+.about-reviews__slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 7.5rem;
+    height: 7.5rem;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    box-shadow: 0px 0px 3.5rem rgba(1, 31, 58, 0.05);
+    border-radius: 50%;
+    z-index: 50;
+    transition: background-color 0.2s, opacity 0.2s, visibility 0.2s;
+    @include breakpoint(mobile) {
+        display: none;
+    }
+    
+
+    &--prev {
+        left: calc(66rem + 1.5rem);
+    }
+
+    &--next {
+        left: calc(66rem + 3rem + 66rem + 1.5rem);
+    }
+
+    &.swiper-button-disabled {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.2s, visibility 0s linear 0.2s, background-color 0.2s;
+        pointer-events: none;
+        cursor: default;
+    }
+
+    svg {
+        width: 3.5rem;
+        height: 3.5rem;
+        fill: var(--primary-color);
+        transition: fill 0.2s;
+    }
+
+    .no-touch &:not(.swiper-button-disabled):hover,
+    .touch &:not(.swiper-button-disabled):active {
+        background-color: var(--primary-color);
+        svg {
+            fill: white;
+        }
+    }
+}
+
+
+.about-reviews__slider-pagination {
+    margin-top: 2.5rem;
+    @include breakpointMF(small-tablet) {
+        display: none;
+    }
+}

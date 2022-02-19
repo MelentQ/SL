@@ -40,6 +40,7 @@ import illustrationsSlider from './illustrations-slider';
 import productTabs from './productTabs';
 import complectationShowAll from './complectationShowAll';
 import fancybox from './fancybox';
+import aboutReviewsSlider from './aboutReviewsSlider';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -81,6 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
     productTabs();
     complectationShowAll();
     fancybox();
+    aboutReviewsSlider();
 });
 
 document.addEventListener('lazyloaded', () => {

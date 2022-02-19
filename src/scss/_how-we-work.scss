@@ -1,0 +1,95 @@
+.how-we-work {
+    margin-bottom: 12.5rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 6rem;
+    }
+}
+
+.how-we-work__heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 120%;
+    margin-bottom: 7rem;
+
+    @include breakpoint(mobile) {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 3rem;
+        line-height: 100%;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.how-we-work__list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-gap: 3rem;
+    margin-bottom: 5rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @include breakpoint(mobile) {
+        grid-template-columns: minmax(0, 1fr);
+        grid-gap: 1.5rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.how-we-work__list-item {
+    display: flex;
+    flex-direction: column;
+    &::before {
+        display: none;
+    }
+}
+
+.how-we-work__card {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    border: 1px solid #bed2e4;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    min-height: 24rem;
+
+    @include breakpoint(mobile) {
+        padding: 1.5rem;
+        min-height: 13.5rem;
+    }
+    &::before {
+        content: counter(ordered-list, decimal-leading-zero);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 3rem;
+        color: var(--primary-color);
+        line-height: 100%;
+        margin-bottom: 2rem;
+
+        @include breakpoint(mobile) {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 2.5rem;
+            line-height: 100%;
+        }
+    }
+}
+
+.how-we-work__card-text {
+    margin-top: auto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 125%;
+
+    @include breakpoint(mobile) {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 125%;
+        max-width: 25rem;
+    }
+}

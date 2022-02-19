@@ -1,8 +1,8 @@
 .realised-projects {
-    padding: 10rem 0;
+    padding-bottom: 10rem;
 
     @include breakpoint(mobile) {
-        padding: 5rem 0;
+        padding-bottom: 5rem;
     }
 }
 
