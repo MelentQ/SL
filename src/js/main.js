@@ -44,7 +44,7 @@ import aboutReviewsSlider from './aboutReviewsSlider';
 
 gsap.registerPlugin(ScrollTrigger);
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
     polyfills();
     detectTouch();
     setScrollbarWidth();
@@ -83,13 +83,17 @@ document.addEventListener('DOMContentLoaded', function () {
     complectationShowAll();
     fancybox();
     aboutReviewsSlider();
+
+    if (history.scrollRestoration) {
+        history.scrollRestoration = 'manual';
+    }
 });
 
 document.addEventListener('lazyloaded', () => {
     ScrollTrigger.refresh();
 });
 
-window.addEventListener('load', function () {
+window.addEventListener('load', function() {
     document.body.classList.add('loaded');
     ScrollTrigger.refresh();
     animatedHeadings();

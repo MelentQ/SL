@@ -15,6 +15,11 @@
     visibility: hidden;
     transition: opacity 0.4s, visibility 0s linear 0.4s;
 
+    .no-touch & {
+        @include customScrollbar();
+        overflow-y: scroll;
+    }
+
     &:not(.active) {
         right: calc(-1 * var(--sb-width, 0));
     }
@@ -38,6 +43,10 @@
     position: relative;
     padding: 3rem;
     z-index: 1;
+
+    &--review {
+        max-width: 115rem;
+    }
 
     @include breakpoint(mobile) {
         padding: 1.5rem;
@@ -82,6 +91,10 @@
     margin-bottom: 2rem;
     max-width: 48rem;
 
+    &--fullwidth {
+        max-width: none;
+    }
+
     @include breakpoint(mobile) {
         font-style: normal;
         font-weight: 600;
@@ -121,7 +134,6 @@
 
     @include breakpoint(mobile) {
         grid-gap: 1rem;
-
     }
 }
 
@@ -143,9 +155,207 @@
     }
 }
 
-
 .modal__success-close {
     @include breakpoint(mobile) {
         width: 100%;
+    }
+}
+
+.modal__review-form-row {
+    margin-bottom: 4rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    grid-gap: 2rem;
+    align-items: flex-start;
+
+    @include breakpoint(mobile) {
+        grid-template-columns: minmax(0, 1fr);
+        grid-gap: 1.5rem;
+        margin-bottom: 3rem;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.modal__review-form-row-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 100%;
+
+    @include breakpoint(mobile) {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 115%;
+    }
+}
+
+.modal__review-form-col {
+    @include breakpointMF(small-tablet) {
+        &:only-child {
+            grid-column: 2 / 3;
+        }
+    }
+}
+
+.modal__review-form-col--centered {
+    @include breakpointMF(small-tablet) {
+        align-self: center;
+    }
+}
+
+.modal__review-form-checkboxes {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    @include breakpoint(mobile) {
+        gap: 0.5rem;
+    }
+}
+
+.modal__review-form-checkbox {
+    cursor: pointer;
+    user-select: none;
+}
+
+.modal__review-form-checkbox-input {
+    display: none;
+}
+
+.modal__review-form-checkbox-content {
+    width: 5.5rem;
+    height: 5.5rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 1.5rem;
+    transition: background-color 0.2s, color 0.2s;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 100%;
+    text-transform: uppercase;
+
+    @include breakpoint(mobile) {
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 1rem;
+    }
+}
+
+.modal__review-form-checkbox-input:checked ~ .modal__review-form-checkbox-content {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.modal__review-form-remark {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 135%;
+    color: #aab9c7;
+    margin-top: 2rem;
+
+    @include breakpoint(mobile) {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.3rem;
+        line-height: 135%;
+        margin-top: 1rem;
+    }
+}
+
+.modal__review-form-inputs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 1.5rem;
+    grid-row-gap: 2rem;
+    align-items: flex-start;
+    @include breakpoint(mobile) {
+        grid-template-columns: minmax(0, 1fr);
+        grid-gap: 2rem;
+    }
+    
+}
+
+.modal__review-form-btns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 1.5rem;
+    align-items: center;
+    display: grid;
+    margin-top: 1rem;
+
+    @include breakpoint(mobile) {
+        grid-template-columns: minmax(0, 1fr);
+        grid-gap: 2rem;
+        margin-top: 0;
+    }
+}
+
+.modal__review-form-policy {
+    display: flex;
+    align-items: flex-start;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.7rem;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: #b3bcc4;
+    font-family: 'Stapel', sans-serif;
+
+    @include breakpoint(mobile) {
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 115%;
+    }
+}
+
+.modal__review-form-policy-text {
+    max-width: 40rem;
+    margin-left: 0.5rem;
+
+    @include breakpoint(mobile) {
+        max-width: none;
+        width: 50%;
+        flex-grow: 1;
+    }
+
+    a {
+        text-decoration: none;
+
+        & > span {
+            background-image: linear-gradient(currentColor, currentColor);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 100% 1px;
+            transition: background-size 0.25s ease-out;
+        }
+
+        .no-touch &:hover,
+        .touch &:active {
+            & > span {
+                background-size: 0% 1px;
+            }
+        }
+    }
+}
+
+.modal__review-form-inputs-stack {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-gap: 2rem;
+}
+
+.modal__review-form {
+    margin-top: 2rem;
+
+    @include breakpoint(mobile) {
+        margin: 0;
     }
 }
