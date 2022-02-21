@@ -19,12 +19,12 @@ export default function brandBlock() {
             pagination: {
                 el: element.querySelector('.slider-pagination'),
                 type: 'bullets',
-                clickable: true,
-             
+                clickable: true
             },
             breakpoints: {
                 641: {
-                    spaceBetween: 20
+                    spaceBetween: 20,
+                    slidesPerView: 4
                 }
             }
         });

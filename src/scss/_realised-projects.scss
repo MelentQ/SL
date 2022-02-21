@@ -11,6 +11,8 @@
     align-items: center;
     margin-bottom: 8rem;
 
+
+
     @include breakpoint(mobile) {
         margin-bottom: 2.5rem;
     }
@@ -27,6 +29,10 @@
 
 .realised-projects__large-heading {
     grid-column: span 10;
+
+    .realised-projects__top-row--simple & {
+        grid-column: span 12;
+    }
     @include breakpoint(mobile) {
         grid-column: 1 / -1;
         margin-bottom: 1.5rem;
@@ -59,7 +65,7 @@
     -webkit-text-stroke-color: var(--primary-color);
 
     @include breakpoint(mobile) {
-        font-weight: 600;
+        font-weight: 700;
         font-size: 5rem;
         line-height: 100%;
         -webkit-text-stroke-width: 1.5px;
