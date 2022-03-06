@@ -879,6 +879,7 @@
 
     z-index: 5;
 
+    &:only-child,
     &.active {
         opacity: 1;
         visibility: inherit;

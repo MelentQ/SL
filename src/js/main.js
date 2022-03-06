@@ -45,6 +45,8 @@ import aboutReviewsSlider from './aboutReviewsSlider';
 gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener('DOMContentLoaded', function() {
+    window.SL_API = {};
+
     polyfills();
     detectTouch();
     setScrollbarWidth();

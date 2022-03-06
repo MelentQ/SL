@@ -1,8 +1,6 @@
 export default function comparison() {
-    const elements = Array.from(document.querySelectorAll('.js-comparison'));
-
-    elements.forEach(element => {
-        const comparisonSelects = Array.from(element.querySelectorAll('.js-comparison-select'));
+    function initializeComparisonSelects() {
+        const comparisonSelects = Array.from(document.querySelectorAll('.js-comparison-select'));
 
         comparisonSelects.forEach(element => {
             const btn = element.querySelector('.js-comparison-select-btn');
@@ -61,26 +59,9 @@ export default function comparison() {
                 }
             });
         });
+    }
 
-        const tabs = Array.from(element.querySelectorAll('.comparison__tab'));
+    window.SL_API.initializeComparisonSelects = initializeComparisonSelects;
 
-        const setActiveTab = index => {
-            tabs.forEach(tab => tab.classList.remove('active'));
-            tabs[index].classList.add('active');
-        }
-
-        setActiveTab(0);
-
-        const tabsRadios = Array.from(element.querySelectorAll('.comparison__categories-checkbox-input'));
-
-
-        tabsRadios.forEach(input => {
-            input.addEventListener('change', () => {
-                const activeIndex = tabsRadios.findIndex(item => item.checked);
-
-                setActiveTab(activeIndex);
-            })
-        })
-
-    });
+    initializeComparisonSelects();
 }
