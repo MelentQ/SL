@@ -72,7 +72,7 @@ export default function catalogCardsSliders() {
         });
     };
 
-    window.initializeCatalogCardsSliders = initializeCatalogCardsSliders;
+    window.SL_API.initializeCatalogCardsSliders = initializeCatalogCardsSliders;
 
     initializeCatalogCardsSliders();
 }
