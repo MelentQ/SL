@@ -23,9 +23,13 @@ export default function introSlider() {
             Array.from(slides).forEach((slide, slideIndex) => {
                 const video = slide.querySelector('video');
                 if (slideIndex === activeIndex) {
-                    video.play();
+                    if (video) {
+                        video.play();
+                    }
                 } else {
-                    video.pause();
+                    if (video) {
+                        video.pause();
+                    }
                 }
             });
         };
