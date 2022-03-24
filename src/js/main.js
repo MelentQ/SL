@@ -41,6 +41,8 @@ import productTabs from './productTabs';
 import complectationShowAll from './complectationShowAll';
 import fancybox from './fancybox';
 import aboutReviewsSlider from './aboutReviewsSlider';
+import filtersNav from './filtersNav';
+import stickyNavWrapper from './stickyNavWrapper';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -85,6 +87,8 @@ document.addEventListener('DOMContentLoaded', function() {
     complectationShowAll();
     fancybox();
     aboutReviewsSlider();
+    filtersNav();
+    stickyNavWrapper();
 
     if (history.scrollRestoration) {
         history.scrollRestoration = 'manual';

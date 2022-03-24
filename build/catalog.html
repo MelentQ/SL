@@ -700,6 +700,34 @@
                         </li>
                     </ul>
                 </div>
+                <div class="catalog-page__filters-nav-outside-wrapper">
+
+
+                    <div class="catalog-page__filters-nav-wrapper js-sticky-nav-wrapper">
+                        <div class="catalog-page__filters-nav js-filters-nav">
+                            <div class="swiper-container">
+                                <ul class="swiper-wrapper catalog-page__filters-nav-list">
+                                    <li class="swiper-slide catalog-page__filters-nav-list-item">
+                                        <a href="#filters-brand" class="catalog-page__filters-nav-link js-open-modal">
+                                            Бренды
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide catalog-page__filters-nav-list-item">
+                                        <a href="#filters-drive" class="catalog-page__filters-nav-link js-open-modal">
+                                            Тип привода
+                                        </a>
+                                    </li>
+
+                                    <li class="swiper-slide catalog-page__filters-nav-list-item">
+                                        <a href="#filters-area" class="catalog-page__filters-nav-link js-open-modal">
+                                            Площадь обработки, м²
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="catalog-page__what-to-choose">
                 <a href="#" class="what-to-choose">
@@ -728,56 +756,54 @@
             </div>
 
         </div>
+
         <div class="catalog-page__layout">
             <div class="catalog-page__sidebar js-catalog-sticky-sidebar">
-                <div class="catalog-page__filters-popup js-modal" id="filters-modal">
-                    <div class="catalog-page__filters-popup-top-row">
-                        <h4 class="catalog-page__filters-popup-heading">
-                            Фильтры
-                        </h4>
-                        <button class="catalog-page__filters-popup-close js-close-modal">
-                            <span></span>
-                            <span></span>
-                        </button>
-                    </div>
 
-                    <form action="/" method="GET" class="catalog-page__filters">
-                        <div class="catalog-page__filters-categories">
-                            <ul class="catalog-page__filters-categories-list">
-                                <li class="catalog-page__filters-categories-list-item active">
-                                    <a href="#" class="catalog-page__filters-categories-link">
-                                        Новые льдозаливочные машины
-                                        <span class="catalog-page__filters-categories-count">
-                                            20
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="catalog-page__filters-categories-list-item">
-                                    <a href="#" class="catalog-page__filters-categories-link">
-                                        Льдозаливочные машины с пробегом
-                                        <span class="catalog-page__filters-categories-count">
-                                            10
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="catalog-page__filters-categories-list-item">
-                                    <a href="#" class="catalog-page__filters-categories-link">
-                                        Машины для подрезки льда у борта
-                                        <span class="catalog-page__filters-categories-count">
-                                            5
-                                        </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <button class="catalog-page__reset-btn" type="reset">
-                            <svg width="14" height="14" aria-hidden="true" class="icon-close">
-                                <use xlink:href="#close"></use>
-                            </svg>
-                            Сбросить все фильтры
-                        </button>
-                        <div class="catalog-page__filters-blocks">
-                            <div class="catalog-page__filters-block">
+                <form action="/" method="GET" class="catalog-page__filters">
+                    <div class="catalog-page__filters-categories">
+                        <ul class="catalog-page__filters-categories-list">
+                            <li class="catalog-page__filters-categories-list-item active">
+                                <a href="#" class="catalog-page__filters-categories-link">
+                                    Новые льдозаливочные машины
+                                    <span class="catalog-page__filters-categories-count">
+                                        20
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="catalog-page__filters-categories-list-item">
+                                <a href="#" class="catalog-page__filters-categories-link">
+                                    Льдозаливочные машины с пробегом
+                                    <span class="catalog-page__filters-categories-count">
+                                        10
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="catalog-page__filters-categories-list-item">
+                                <a href="#" class="catalog-page__filters-categories-link">
+                                    Машины для подрезки льда у борта
+                                    <span class="catalog-page__filters-categories-count">
+                                        5
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="catalog-page__reset-btn" type="reset">
+                        <svg width="14" height="14" aria-hidden="true" class="icon-close">
+                            <use xlink:href="#close"></use>
+                        </svg>
+                        Сбросить все фильтры
+                    </button>
+                    <div class="catalog-page__filters-blocks">
+                        <div class="catalog-page__filters-block js-modal" id="filters-brand">
+                            <div class="catalog-page__filters-block-inner">
+                                <button class="catalog-page__filters-block-close js-close-modal" type="button">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-close">
+                                        <use xlink:href="#close"></use>
+                                    </svg>
+                                </button>
+
                                 <h3 class="catalog-page__filters-block-heading">
                                     Бренд
                                 </h3>
@@ -832,8 +858,19 @@
                                         </span>
                                     </label>
                                 </div>
+                                <button class="catalog-page__filters-block-submit" type="submit">
+                                    Отлично
+                                </button>
                             </div>
-                            <div class="catalog-page__filters-block">
+                        </div>
+                        <div class="catalog-page__filters-block js-modal" id="filters-drive">
+                            <div class="catalog-page__filters-block-inner">
+                                <button class="catalog-page__filters-block-close js-close-modal" type="button">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-close">
+                                        <use xlink:href="#close"></use>
+                                    </svg>
+                                </button>
+
                                 <h3 class="catalog-page__filters-block-heading">
                                     Тип привода
                                 </h3>
@@ -922,10 +959,21 @@
                                     </label>
 
                                 </div>
+                                <button class="catalog-page__filters-block-submit" type="submit">
+                                    Отлично
+                                </button>
                             </div>
-                            <div class="catalog-page__filters-block">
+                        </div>
+                        <div class="catalog-page__filters-block js-modal" id="filters-area">
+                            <div class="catalog-page__filters-block-inner">
+                                <button class="catalog-page__filters-block-close js-close-modal" type="button">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-close">
+                                        <use xlink:href="#close"></use>
+                                    </svg>
+                                </button>
+
                                 <h3 class="catalog-page__filters-block-heading">
-                                    Тип привода
+                                    Площадь обработки, м²
                                 </h3>
                                 <div class="catalog-page__filters-brands">
                                     <label class="catalog-page__filters-checkbox">
@@ -1038,15 +1086,16 @@
 
 
                                 </div>
+                                <button class="catalog-page__filters-block-submit" type="submit">
+                                    Отлично
+                                </button>
                             </div>
                         </div>
-                        <button type="submit"
-                            class="blue-small-btn blue-small-btn--orange catalog-page__filters-submit js-close-modal">
-                            Применить фильтры
-                        </button>
+                    </div>
 
-                    </form>
-                </div>
+
+                </form>
+
             </div>
             <div class="catalog-page__main">
                 <div class="catalog-page__buttons">
