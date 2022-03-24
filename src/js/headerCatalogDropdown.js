@@ -16,8 +16,11 @@ export default function headerCatalogDropdown() {
             tabs[index].classList.add('active');
         };
 
-        setActiveTab(0);
+        if (tabs.length) {
+            setActiveTab(0);
+        }
 
+    
         items.forEach((item, itemIndex) => {
             item.addEventListener('click', event => {
                 event.preventDefault();

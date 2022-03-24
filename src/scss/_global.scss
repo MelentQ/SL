@@ -229,11 +229,6 @@ th {
     }
 }
 
-.hide-on-mobile {
-    @include breakpoint(mobile) {
-        display: none;
-    }
-}
 
 ::selection {
     color: white;
@@ -255,14 +250,15 @@ select:-webkit-autofill:focus {
 
 
 .hide-on-mobile {
+  
     @include breakpoint(mobile) {
-        display: none;
+        display: none !important;
     }
 }
 
 
 .show-on-mobile {
     @include breakpointMF(small-tablet) {
-        display: none;
+        display: none !important;
     }
 }
