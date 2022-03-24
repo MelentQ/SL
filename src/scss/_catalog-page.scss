@@ -64,7 +64,7 @@
     color: var(--primary-color);
     margin-bottom: 5rem;
     -webkit-text-fill-color: white;
-    -webkit-text-stroke-width: .3rem;
+    -webkit-text-stroke-width: 0.3rem;
     -webkit-text-stroke-color: var(--primary-color);
 
     &:last-child {
@@ -742,8 +742,8 @@
     grid-auto-flow: dense;
 
     @include breakpoint(mobile) {
-        grid-template-columns: minmax(0, 1fr);
-        grid-gap: 1.5rem;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-gap: 1rem;
     }
 }
 
@@ -930,7 +930,7 @@
     border-width: 2px;
     border-radius: 2rem;
     border-bottom-left-radius: 0;
-  
+
     position: relative;
     padding: 2rem;
     display: flex;
@@ -950,7 +950,6 @@
         fill: var(--primary-color);
     }
 
-  
     &::before {
         content: '';
         position: absolute;
@@ -981,7 +980,6 @@
         margin-bottom: 1rem;
     }
 }
-
 
 .catalog-page__brand-list {
     display: grid;

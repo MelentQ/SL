@@ -13,6 +13,10 @@
         padding: 1.5rem;
         border-radius: 1.5rem;
         box-shadow: 0px 0px 35px rgba(1, 31, 58, 0.05);
+
+        &.catalog-card--compact {
+            padding: 0.7rem;
+        }
     }
 
     .no-touch &:hover {
@@ -75,6 +79,13 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+
+    @include breakpoint(mobile) {
+        .catalog-card--compact & {
+            flex-direction: column;
+            align-items: stretch;
+        }
+    }
 }
 
 .catalog-card__image-slider {
@@ -84,6 +95,11 @@
     @include breakpoint(mobile) {
         width: 15rem;
         margin-right: 2.5rem;
+
+        .catalog-card--compact & {
+            width: 100%;
+            margin: 0;
+        }
     }
 
     .swiper-container {
@@ -95,7 +111,7 @@
 
 .catalog-card__image-slider-card {
     position: relative;
-
+    background-color: #fff;
     &::before {
         content: '';
         display: block;
@@ -109,7 +125,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     -webkit-user-drag: none;
 }
 
@@ -121,6 +137,11 @@
 
     @include breakpoint(mobile) {
         display: none;
+
+        .catalog-card--compact & {
+            display: flex;
+            margin-top: 0.7rem;
+        }
     }
 
     .swiper-pagination-bullet {
@@ -144,6 +165,12 @@
     flex-direction: column;
     align-items: flex-end;
     text-align: right;
+
+    @include breakpoint(mobile) {
+        .catalog-card--compact & {
+            display: none;
+        }
+    }
 }
 
 .catalog-card__country {
@@ -223,6 +250,10 @@
     @include breakpoint(mobile) {
         padding: 1.5rem 0;
         padding-top: 2rem;
+
+        .catalog-card--compact & {
+            padding: 1rem 0;
+        }
     }
 }
 
@@ -243,6 +274,14 @@
         font-size: 2rem;
         line-height: 100%;
         margin-bottom: 1rem;
+
+        .catalog-card--compact & {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.8rem;
+            line-height: 100%;
+            margin: 0;
+        }
     }
 }
 
@@ -258,6 +297,18 @@
         font-weight: 600;
         font-size: 1.3rem;
         line-height: 115%;
+
+        .catalog-card--compact & {
+            display: none;
+        }
+    }
+}
+
+.catalog-card__stats-key-text {
+    @include breakpoint(mobile) {
+        .catalog-card--compact & {
+            display: none;
+        }
     }
 }
 
@@ -267,6 +318,10 @@
     @include breakpoint(mobile) {
         padding: 1.5rem 0;
         padding-bottom: 2.5rem;
+
+        .catalog-card--compact & {
+            padding-bottom: 1.5rem;
+        }
     }
 }
 
@@ -303,6 +358,14 @@
     }
 
     @include breakpoint(mobile) {
+        .catalog-card--compact & {
+            width: auto;
+            flex-grow: 0;
+
+            svg {
+                margin: 0;
+            }
+        }
         svg {
             width: 2rem;
             height: 2rem;
@@ -326,6 +389,10 @@
         font-size: 1.5rem;
         line-height: 100%;
         width: 9rem;
+
+        .catalog-card--compact & {
+            margin-left: 1.5rem;
+        }
     }
 }
 
@@ -337,6 +404,11 @@
 
     @include breakpoint(mobile) {
         gap: 2rem;
+
+        .catalog-card--compact & {
+            flex-direction: column;
+            align-items: stretch;
+        }
     }
 }
 
@@ -354,6 +426,10 @@
     @include breakpoint(mobile) {
         width: 4.5rem;
         height: 4.5rem;
+
+        .catalog-card--compact & {
+            display: none;
+        }
     }
     &:link,
     &:visited {
@@ -382,6 +458,9 @@
 
     @include breakpoint(mobile) {
         margin-right: 0;
+
+        .catalog-card--compact & {
+            width: 100%;
+        }
     }
 }
-
