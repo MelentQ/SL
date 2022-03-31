@@ -1,8 +1,11 @@
 export default function comparison() {
+    const initializedSelects = [];
     function initializeComparisonSelects() {
         const comparisonSelects = Array.from(document.querySelectorAll('.js-comparison-select'));
 
         comparisonSelects.forEach(element => {
+            if (initializedSelects.includes(element)) return;
+            initializedSelects.push(element);
             const btn = element.querySelector('.js-comparison-select-btn');
             const btnValue = element.querySelector('.js-comparison-select-btn-text');
 
