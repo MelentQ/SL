@@ -133,7 +133,8 @@
 
         .no-touch &:hover,
         .touch &:active {
-            color: white;
+            color: var(--primary-color);
+            background-color: #fff;
         }
     }
 
