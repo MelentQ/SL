@@ -54,13 +54,19 @@
     display: flex;
     align-items: center;
     gap: 0.2rem;
-
+    color: #aab9c7;
     svg {
         flex-shrink: 0;
         width: 2rem;
         height: 2rem;
         fill: #ed5835;
+
+        &.inactive {
+            fill: #aab9c7;
+        }
     }
+
+    
 }
 
 .product-intro__categories {
