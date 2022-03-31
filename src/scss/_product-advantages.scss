@@ -9,7 +9,7 @@
 .product-advantages__list {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    grid-gap: 10.5rem;
+    grid-gap: 3.5rem;
     grid-row-gap: 5rem;
 
     @include breakpoint(mobile) {
@@ -20,7 +20,7 @@
 
 .product-advantages__card {
     display: flex;
-    justify-content: center;
+  
     align-items: center;
     font-style: normal;
     font-weight: 600;
@@ -34,6 +34,10 @@
         line-height: 115%;
         justify-content: flex-start;
     }
+}
+
+.product-advantages__card-text {
+    max-width: 25rem;
 }
 
 .product-advantages__card-icon {
