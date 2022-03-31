@@ -355,7 +355,7 @@
     @include underline();
 }
 
-.page-header__whats-app {
+.page-header__phone {
     display: inline-flex;
     align-items: center;
     margin-left: 3rem;
@@ -364,10 +364,24 @@
     font-size: 2rem;
     line-height: 100%;
     text-transform: uppercase;
-    margin-right: 4rem;
+    margin-right: 1.5rem;
 
     @include underline();
 
+    @include breakpoint(mobile) {
+        display: none;
+    }
+}
+
+.page-header__whats-app {
+    margin-right: 4rem;
+    display: block;
+
+    .no-touch &:hover {
+        .page-header__whats-app-logo {
+            transform: scale(0.95);
+        }
+    }
     @include breakpoint(mobile) {
         display: none;
     }
@@ -377,7 +391,7 @@
     width: 4rem;
     height: 4rem;
     flex-shrink: 0;
-    margin-left: 1.5rem;
+    transition: transform .3s;
     object-fit: contain;
 }
 
