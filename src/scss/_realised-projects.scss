@@ -143,6 +143,14 @@
     & > .swiper-container {
         overflow: visible;
     }
+
+    @include breakpoint(mobile) {
+       
+
+        & > .swiper-container > .swiper-wrapper > .swiper-slide {
+            width: 95%;
+        }
+    }
 }
 
 .realised-projects__card-image-slider {
@@ -158,9 +166,7 @@
     display: flex;
     flex-direction: column;
 
-    @include breakpoint(mobile) {
-        border-radius: 1.5rem;
-    }
+  
 
     .swiper-container {
         width: 100%;
@@ -178,6 +184,11 @@
         flex-direction: column;
         flex-grow: 1;
         position: relative;
+    }
+
+    @include breakpoint(mobile) {
+        border-radius: 1.5rem;
+       
     }
 }
 

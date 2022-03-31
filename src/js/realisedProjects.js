@@ -12,8 +12,11 @@ export default function realisedProjects() {
 
                 new Swiper(container, {
                     watchOverflow: true,
+                    slidesPerView: 'auto',
                     speed: 700,
-                    spaceBetween: 30,
+                    centeredSlides: true,
+                    centeredSlidesBounds: true,
+                    spaceBetween: 10,
                     pagination: {
                         el: element.querySelector('.slider-pagination'),
                         type: 'bullets',
