@@ -75,3 +75,11 @@
         grid-gap: 1rem;
     }
 }
+
+.has-questions-block {
+    margin-bottom: 10rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 5rem;
+    }
+}

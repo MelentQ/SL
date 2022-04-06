@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/styles.min.css" />
     
     <title>
-        Страница не найдена
+        О компании
     </title>
 </head>
 
@@ -673,36 +673,691 @@
             </div>
         </header>        <main class="page-main">
 
-<section class="not-found">
-
+<section class="service">
     <div class="container">
-        <div class="not-found__row">
-            <div class="not-found__code">
-                404
-            </div>
-            <div class="not-found__content">
-                <h3 class="small-heading not-found__small-heading">
-                    Ошибка 404
-                </h3>
-                <div class="not-found__text">
+        <div class="breadcrumbs service__breadcrumbs">
+            <a href="#">
+                <span>
+                    Главная
+                </span>
+            </a>
+            /
+            <a href="#">
+                <span>
+                    Услуги
+                </span>
+            </a>
+            /
+            <a href="#" class="active">
+                <span>
+                    Комплексное оснащение ледовых арен
+                </span>
+            </a>
+        </div>
+        <div class="service__intro">
+
+            <div class="service__intro-content">
+                <h1 class="service__main-heading">
+                    Комплексное оснащение
+                    ледовых арен
+                </h1>
+                <div class="service__intro-text">
                     <p>
-                        К сожалению, такой страницы не существует
+                        Мы занимаемся реализацией оборудования для комплексного оснащение ледовых арен
+                        и спортивных сооружений.
                     </p>
                 </div>
-                <a href="#" class="arrow-btn-filled">
-                    На главную
+                <a href="#callback-modal" class="arrow-btn-filled service__intro-link js-open-modal">
+                    Связаться с нами
                     <svg width="14" height="14" aria-hidden="true" class="icon-diagonal-arrow">
                         <use xlink:href="#diagonal-arrow"></use>
                     </svg>
                 </a>
             </div>
-            <div class="not-found__image-wrapper">
+            <img src="img/intro-service.webp" alt="" class="service__intro-image">
+        </div>
+        <div class="service__nav">
+            <a href="#freezers" class="service__nav-link">
+                <img src="img/service-nav/1.svg" alt="" class="service__nav-link-icon">
+                Холодильное оборудование
+            </a>
+            <a href="#tribunes" class="service__nav-link">
+                <img src="img/service-nav/2.svg" alt="" class="service__nav-link-icon">
+                Борта и трибуны
+            </a>
+            <a href="#trainers" class="service__nav-link">
+                <img src="img/service-nav/3.svg" alt="" class="service__nav-link-icon">
+                Хоккейные тренажеры
+            </a>
+            <a href="#machinery" class="service__nav-link">
+                <img src="img/service-nav/4.svg" alt="" class="service__nav-link-icon">
+                Станки для заточки
+            </a>
+            <a href="#brands" class="service__nav-link">
+                <img src="img/service-nav/5.svg" alt="" class="service__nav-link-icon">
+                Спортивный инвентарь
+            </a>
+            <a href="#lights" class="service__nav-link">
+                <img src="img/service-nav/5.svg" alt="" class="service__nav-link-icon">
+                Освещение и табло
+            </a>
+        </div>
+        <ul class="service__list">
+            <li class="service__list-item">
+                <div class="service__card" id="freezers">
+                    <div class="service__card-image-block">
+                        <div class="service__card-number">
+                            4
+                        </div>
+                        <h4 class="service__card-image-block-heading">
+                            фирмы
+                            производителя
+                        </h4>
+                        <img src="img/service-cards/1.webp" alt="" class="service__card-image">
+                    </div>
+                    <div class="service__card-content">
+                        <h3 class="service__card-title">
+                            Холодильное оборудование
+                        </h3>
+                        <div class="service__card-text">
+                            <p>
+                                Подбираем и поставляем холодильные установки для равномерного распределения льда.
+                            </p>
+                        </div>
+                        <ul class="service__card-list">
+                            <li class="service__card-list-item">
+                                Идеальное состояние льда круглый год
+                            </li>
+                            <li class="service__card-list-item">
+                                Равномерная замарозка способствует ровному слою льда
+                            </li>
+                            <li class="service__card-list-item">
+                                Индивидуальные опции позволяющие достичь требуемых параметров
+                            </li>
+                        </ul>
+                        <a href="#callback-modal" class="arrow-btn-filled service__card-order-link js-open-modal">
+                            Заказать
+                            <svg width="14" height="14" aria-hidden="true" class="icon-diagonal-arrow">
+                                <use xlink:href="#diagonal-arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="service__list-item">
+                <div class="service__card" id="tribunes">
+                    <div class="service__card-image-block">
+                        <div class="service__card-number">
+                            5
+                        </div>
+                        <h4 class="service__card-image-block-heading">
+                            готовых комплектов
+                        </h4>
+                        <img src="img/service-cards/2.webp" alt="" class="service__card-image">
+                    </div>
+                    <div class="service__card-content">
+                        <h3 class="service__card-title">
+                            Борта и трибуны
+                        </h3>
+                        <div class="service__card-text">
+                            <p>
+                                Полное оснащение ледовых арен высококачественным и надежным оборудованием от проверенных
+                                производителей.
+                            </p>
+                        </div>
+                        <ul class="service__card-list">
+                            <li class="service__card-list-item">
+                                Прочные конструкции, устойчивые к агресивной среде
+                            </li>
+                            <li class="service__card-list-item">
+                                Водоотталкивающее оборудование не поддающееся коррозии
+                            </li>
 
+                        </ul>
+                        <a href="#callback-modal" class="arrow-btn-filled service__card-order-link js-open-modal">
+                            Заказать
+                            <svg width="14" height="14" aria-hidden="true" class="icon-diagonal-arrow">
+                                <use xlink:href="#diagonal-arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="service__list-item">
+                <div class="service__card" id="trainers">
+                    <div class="service__card-image-block">
+                        <div class="service__card-number">
+                            6
+                        </div>
+                        <h4 class="service__card-image-block-heading">
+                            видов тренажеров
+                        </h4>
+                        <img src="img/service-cards/3.webp" alt="" class="service__card-image">
+                    </div>
+                    <div class="service__card-content">
+                        <h3 class="service__card-title">
+                            Хоккейные тренажеры
+                        </h3>
+                        <div class="service__card-text">
+                            <p>
+                                Реализуем интерактивные тренажеры для тренировки техники, реакции, дриблинга
+                                и владения шайбой.
+                            </p>
+                        </div>
+                        <ul class="service__card-list">
+                            <li class="service__card-list-item">
+                                Совершенствование навыков игроков любого возраста
+                            </li>
+                            <li class="service__card-list-item">
+                                Позволяют оценивать результативность
+                            </li>
+                            <li class="service__card-list-item">
+                                Тренажеры изготавливаются из ударопрочных нетоксичных материалов
+                            </li>
+                        </ul>
+                        <a href="#callback-modal" class="arrow-btn-filled service__card-order-link js-open-modal">
+                            Заказать
+                            <svg width="14" height="14" aria-hidden="true" class="icon-diagonal-arrow">
+                                <use xlink:href="#diagonal-arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="service__list-item">
+                <div class="service__card" id="machinery">
+                    <div class="service__card-image-block">
+                        <div class="service__card-number">
+                            2
+                        </div>
+                        <h4 class="service__card-image-block-heading">
+                            типа
+                            станков
+                        </h4>
+                        <img src="img/service-cards/4.webp" alt="" class="service__card-image">
+                    </div>
+                    <div class="service__card-content">
+                        <h3 class="service__card-title">
+                            Станки
+                            для заточки
+                        </h3>
+                        <div class="service__card-text">
+                            <p>
+                                Поставляем станки для заточки ножей ледозаливочных машин и коньков.
+                            </p>
+                        </div>
+                        <ul class="service__card-list">
+                            <li class="service__card-list-item">
+                                Идеальное состояние машин и коньков круглый год
+                            </li>
+                            <li class="service__card-list-item">
+                                Высокая роботоспособность оборудования
+                            </li>
 
-                <img src="img/not-found.png" alt="" class="not-found__image">
+                        </ul>
+                        <a href="#callback-modal" class="arrow-btn-filled service__card-order-link js-open-modal">
+                            Заказать
+                            <svg width="14" height="14" aria-hidden="true" class="icon-diagonal-arrow">
+                                <use xlink:href="#diagonal-arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="service__list-item">
+                <div class="service__card" id="brands">
+                    <div class="service__card-image-block">
+                        <div class="service__card-number">
+                            8
+                        </div>
+                        <h4 class="service__card-image-block-heading">
+                            брендов производителей
+                        </h4>
+                        <img src="img/service-cards/5.webp" alt="" class="service__card-image">
+                    </div>
+                    <div class="service__card-content">
+                        <h3 class="service__card-title">
+                            Раздевалки и спортивный инвентарь
+                        </h3>
+                        <div class="service__card-text">
+                            <p>
+                                Оснащаем спортивные сооружения профессиональным инвентарем, в том числе:
+                            </p>
+                        </div>
+                        <ul class="service__card-list">
+                            <li class="service__card-list-item">
+                                Инвентарь для раздевалок (шкавчики, скамейки и тд.)
+                            </li>
+                            <li class="service__card-list-item">
+                                Профессиональные силовые тренажеры
+                            </li>
+                            <li class="service__card-list-item">
+                                Сопутсвующий инвентарь по требованиям заказчика
+                            </li>
+                        </ul>
+                        <a href="#callback-modal" class="arrow-btn-filled service__card-order-link js-open-modal">
+                            Заказать
+                            <svg width="14" height="14" aria-hidden="true" class="icon-diagonal-arrow">
+                                <use xlink:href="#diagonal-arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="service__list-item">
+                <div class="service__card" id="lights">
+                    <div class="service__card-image-block">
+                        <div class="service__card-number">
+                            3
+                        </div>
+                        <h4 class="service__card-image-block-heading">
+                            типа
+                            конструкций
+                        </h4>
+                        <img src="img/service-cards/6.webp" alt="" class="service__card-image">
+                    </div>
+                    <div class="service__card-content">
+                        <h3 class="service__card-title">
+                            Освещение
+                            и табло
+                        </h3>
+                        <div class="service__card-text">
+                            <p>
+                                Доставляем и монтируем профессиональные конструкции, а именно:
+                            </p>
+                        </div>
+                        <ul class="service__card-list">
+                            <li class="service__card-list-item">
+                                Освещение ледовой арены
+                            </li>
+                            <li class="service__card-list-item">
+                                Интерактивное табло
+                            </li>
+                            <li class="service__card-list-item">
+                                Система автогол
+                            </li>
+                        </ul>
+                        <a href="#callback-modal" class="arrow-btn-filled service__card-order-link js-open-modal">
+                            Заказать
+                            <svg width="14" height="14" aria-hidden="true" class="icon-diagonal-arrow">
+                                <use xlink:href="#diagonal-arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="realised-projects js-realised-projects">
+    <div class="container">
+        <div class="realised-projects__top-row realised-projects__top-row--simple">
+
+            <h3 class="secondary-heading realised-projects__large-heading">
+                Реализованные проекты
+            </h3>
+            <div class="realised-projects__count">
+                <div class="realised-projects__count-number">
+                    20
+                </div>
+                <div class="realised-projects__count-text">
+                    <p>
+                        спортивных<br>
+                        сооружений за год
+                    </p>
+                </div>
             </div>
         </div>
+        <div class="realised-projects__slider">
+            <div class="swiper-container">
+                <ul class="swiper-wrapper realised-projects__list realised-projects__list--equal">
+                    <li class="swiper-slide realised-projects__list-item">
+                        <div class="realised-projects__card">
+                            <div class="realised-projects__card-image-slider">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="realised-projects__card-image-slider-card">
+                                                <img data-src="img/service-projects/1.jpg" alt=""
+                                                    class="realised-projects__card-image-slider-card-image lazyload">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="realised-projects__card-image-slider-arrows">
+                                    <button
+                                        class="realised-projects__card-image-slider-arrow realised-projects__card-image-slider-arrow--prev">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-arrow-left">
+                                            <use xlink:href="#arrow-left"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="realised-projects__card-image-slider-pagination">
+                                        1 / 1
+                                    </div>
+                                    <button
+                                        class="realised-projects__card-image-slider-arrow realised-projects__card-image-slider-arrow--next">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-arrow-right">
+                                            <use xlink:href="#arrow-right"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="realised-projects__card-image-slider-count">
+                                    1 фотография
+                                </div>
+                            </div>
+                            <div class="realised-projects__card-link-wrapper">
+                                <div class="realised-projects__card-content">
+                                    <div class="realised-projects__card-content-top-row">
+                                        <h3 class="realised-projects__card-client-name">
+                                            Ледовый дворец «Слобода арена», пос. Рыбная слобода
+                                        </h3>
+                                        <img data-src="img/realised-projects/logo.png" alt=""
+                                            class="realised-projects__card-client-logo lazyload">
+                                    </div>
+                                    <div class="realised-projects__card-content-info">
+                                        <div class="realised-projects__card-date">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-calendar">
+                                                <use xlink:href="#calendar"></use>
+                                            </svg>
+                                            Ноябрь 2020
+                                        </div>
+                                        <h3 class="realised-projects__card-title">
+                                            Проектирование и поставка холодильного оборудования
+                                        </h3>
+                                        <div class="realised-projects__card-text">
+                                            <p>
+                                                Подобрали холодильное оборудование в соответсвии с требованиями
+                                                заказчика
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="swiper-slide realised-projects__list-item">
+                        <div class="realised-projects__card">
+                            <div class="realised-projects__card-image-slider">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="realised-projects__card-image-slider-card">
+                                                <img data-src="img/service-projects/2.jpg" alt=""
+                                                    class="realised-projects__card-image-slider-card-image lazyload">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="realised-projects__card-image-slider-card">
+                                                <img data-src="img/service-projects/2.jpg" alt=""
+                                                    class="realised-projects__card-image-slider-card-image lazyload">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="realised-projects__card-image-slider-card">
+                                                <img data-src="img/service-projects/2.jpg" alt=""
+                                                    class="realised-projects__card-image-slider-card-image lazyload">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="realised-projects__card-image-slider-arrows">
+                                    <button
+                                        class="realised-projects__card-image-slider-arrow realised-projects__card-image-slider-arrow--prev">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-arrow-left">
+                                            <use xlink:href="#arrow-left"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="realised-projects__card-image-slider-pagination">
+                                        1 / 3
+                                    </div>
+                                    <button
+                                        class="realised-projects__card-image-slider-arrow realised-projects__card-image-slider-arrow--next">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-arrow-right">
+                                            <use xlink:href="#arrow-right"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="realised-projects__card-image-slider-count">
+                                    3 фотографии
+                                </div>
+                            </div>
+                            <div class="realised-projects__card-link-wrapper">
+                                <div class="realised-projects__card-content">
+                                    <div class="realised-projects__card-content-top-row">
+                                        <h3 class="realised-projects__card-client-name">
+                                            Ледовый дворец «Слобода арена», пос. Рыбная слобода
+                                        </h3>
+                                        <img data-src="img/realised-projects/logo.png" alt=""
+                                            class="realised-projects__card-client-logo lazyload">
+                                    </div>
+                                    <div class="realised-projects__card-content-info">
+                                        <div class="realised-projects__card-date">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-calendar">
+                                                <use xlink:href="#calendar"></use>
+                                            </svg>
+                                            Ноябрь 2020
+                                        </div>
+                                        <h3 class="realised-projects__card-title">
+                                            Проектирование и поставка холодильного оборудования
+                                        </h3>
+                                        <div class="realised-projects__card-text">
+                                            <p>
+                                                Подобрали холодильное оборудование в соответсвии с требованиями
+                                                заказчика
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="swiper-slide realised-projects__list-item">
+                        <div class="realised-projects__card">
+                            <div class="realised-projects__card-image-slider">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="realised-projects__card-image-slider-card">
+                                                <img data-src="img/service-projects/3.jpg" alt=""
+                                                    class="realised-projects__card-image-slider-card-image lazyload">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="realised-projects__card-image-slider-card">
+                                                <img data-src="img/service-projects/3.jpg" alt=""
+                                                    class="realised-projects__card-image-slider-card-image lazyload">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="realised-projects__card-image-slider-card">
+                                                <img data-src="img/service-projects/3.jpg" alt=""
+                                                    class="realised-projects__card-image-slider-card-image lazyload">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="realised-projects__card-image-slider-arrows">
+                                    <button
+                                        class="realised-projects__card-image-slider-arrow realised-projects__card-image-slider-arrow--prev">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-arrow-left">
+                                            <use xlink:href="#arrow-left"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="realised-projects__card-image-slider-pagination">
+                                        1 / 3
+                                    </div>
+                                    <button
+                                        class="realised-projects__card-image-slider-arrow realised-projects__card-image-slider-arrow--next">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-arrow-right">
+                                            <use xlink:href="#arrow-right"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="realised-projects__card-image-slider-count">
+                                    3 фотографии
+                                </div>
+                            </div>
+                            <div class="realised-projects__card-link-wrapper">
+                                <div class="realised-projects__card-content">
+                                    <div class="realised-projects__card-content-top-row">
+                                        <h3 class="realised-projects__card-client-name">
+                                            Ледовый дворец «Слобода арена», пос. Рыбная слобода
+                                        </h3>
+                                        <img data-src="img/realised-projects/logo.png" alt=""
+                                            class="realised-projects__card-client-logo lazyload">
+                                    </div>
+                                    <div class="realised-projects__card-content-info">
+                                        <div class="realised-projects__card-date">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-calendar">
+                                                <use xlink:href="#calendar"></use>
+                                            </svg>
+                                            Ноябрь 2020
+                                        </div>
+                                        <h3 class="realised-projects__card-title">
+                                            Проектирование и поставка холодильного оборудования
+                                        </h3>
+                                        <div class="realised-projects__card-text">
+                                            <p>
+                                                Подобрали холодильное оборудование в соответсвии с требованиями
+                                                заказчика
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="swiper-slide realised-projects__list-item">
+                        <div class="realised-projects__card">
+                            <div class="realised-projects__card-image-slider">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="realised-projects__card-image-slider-card">
+                                                <img data-src="img/service-projects/4.jpg" alt=""
+                                                    class="realised-projects__card-image-slider-card-image lazyload">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="realised-projects__card-image-slider-card">
+                                                <img data-src="img/service-projects/4.jpg" alt=""
+                                                    class="realised-projects__card-image-slider-card-image lazyload">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="realised-projects__card-image-slider-card">
+                                                <img data-src="img/service-projects/4.jpg" alt=""
+                                                    class="realised-projects__card-image-slider-card-image lazyload">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="realised-projects__card-image-slider-arrows">
+                                    <button
+                                        class="realised-projects__card-image-slider-arrow realised-projects__card-image-slider-arrow--prev">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-arrow-left">
+                                            <use xlink:href="#arrow-left"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="realised-projects__card-image-slider-pagination">
+                                        1 / 3
+                                    </div>
+                                    <button
+                                        class="realised-projects__card-image-slider-arrow realised-projects__card-image-slider-arrow--next">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-arrow-right">
+                                            <use xlink:href="#arrow-right"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="realised-projects__card-image-slider-count">
+                                    3 фотографии
+                                </div>
+                            </div>
+                            <div class="realised-projects__card-link-wrapper">
+                                <div class="realised-projects__card-content">
+                                    <div class="realised-projects__card-content-top-row">
+                                        <h3 class="realised-projects__card-client-name">
+                                            Ледовый дворец «Слобода арена», пос. Рыбная слобода
+                                        </h3>
+                                        <img data-src="img/realised-projects/logo.png" alt=""
+                                            class="realised-projects__card-client-logo lazyload">
+                                    </div>
+                                    <div class="realised-projects__card-content-info">
+                                        <div class="realised-projects__card-date">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-calendar">
+                                                <use xlink:href="#calendar"></use>
+                                            </svg>
+                                            Ноябрь 2020
+                                        </div>
+                                        <h3 class="realised-projects__card-title">
+                                            Проектирование и поставка холодильного оборудования
+                                        </h3>
+                                        <div class="realised-projects__card-text">
+                                            <p>
+                                                Подобрали холодильное оборудование в соответсвии с требованиями
+                                                заказчика
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+
+
+                </ul>
+            </div>
+            <div class="slider-pagination realised-projects__slider-pagination"></div>
+        </div>
+        <div class="realised-projects__bottom-row">
+            <a href="#" class="arrow-btn">
+                смотреть все проекты
+                <svg width="14" height="14" aria-hidden="true" class="icon-diagonal-arrow">
+                    <use xlink:href="#diagonal-arrow"></use>
+                </svg>
+            </a>
+            <a href="#callback-modal" class="blue-btn js-open-modal">
+                Заказать оборудование
+            </a>
+        </div>
     </div>
+</section>
+
+<section class="has-questions-block">
+    <div class="container">
+        <div class="has-questions">
+            <div class="has-questions__content">
+                <h3 class="has-questions__heading">
+                    Остались вопросы?
+                </h3>
+                <div class="has-questions__text">
+                    <p>
+                        Заполните форму и получите консультацию в ближайшее время!
+                    </p>
+                </div>
+            </div>
+            <form action="/" method="POST" class="has-questions__form" data-need-validation="">
+                <div class="has-questions__form-input-wrapper">
+                    <input type="text" class="text-input text-input--white" required="" name="name" placeholder="Ваше имя">
+                </div>
+                <div class="has-questions__form-input-wrapper">
+                    <input type="tel" class="text-input text-input--white js-phone-input" required="" name="phone"
+                        placeholder="+7 (900) 000-00-00" data-parsley-phone="">
+                </div>
+                <button class="blue-btn blue-btn--orange has-questions__form-submit">
+                    Отправить заявку
+                </button>
+            </form>
+        </div>    </div>
 </section>
 
         </main>

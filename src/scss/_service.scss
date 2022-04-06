@@ -1,0 +1,406 @@
+.service {
+    padding-top: 13.5rem;
+    margin-bottom: 10rem;
+    @include breakpoint(mobile) {
+        padding-top: 8rem;
+        margin-bottom: 5rem;
+    }
+}
+
+.service__breadcrumbs {
+    margin-bottom: 5rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 3rem;
+        order: -5;
+    }
+}
+
+.service__intro {
+    margin-bottom: 12rem;
+    position: relative;
+    @include breakpoint(mobile) {
+        margin-bottom: 3.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.service__intro-content {
+    max-width: 90rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+
+    @include breakpoint(mobile) {
+        display: contents;
+    }
+}
+
+.service__intro-image {
+    position: absolute;
+    right: 0;
+    top: -2rem;
+    width: 112rem;
+    height: auto;
+    z-index: -1;
+    pointer-events: none;
+
+    @include breakpoint(mobile) {
+        position: static;
+        margin-top: -2rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        height: auto;
+        order: -2;
+    }
+}
+
+.service__main-heading {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 9rem;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 0.2rem;
+    -webkit-text-stroke-color: var(--primary-color);
+    margin-bottom: 5rem;
+    @include breakpoint(mobile) {
+        font-weight: 800;
+        font-size: 3.5rem;
+        line-height: 100%;
+        margin-bottom: 3rem;
+        -webkit-text-stroke-width: 1px;
+        margin-bottom: 0;
+        order: -2;
+    }
+}
+
+.service__intro-text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 135%;
+    margin-bottom: 5.5rem;
+    max-width: 50rem;
+    @include breakpoint(mobile) {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 125%;
+        margin-bottom: 3rem;
+       
+    }
+}
+
+.service__intro-link {
+    align-self: flex-start;
+}
+
+.service__nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2.5rem;
+    margin-bottom: 10rem;
+
+    @include breakpoint(mobile) {
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        gap: 0.5rem;
+        margin-bottom: 3.5rem;
+    }
+}
+
+.service__nav-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    border: 1px solid #bed2e4;
+    border-radius: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 100%;
+    color: #011f3a;
+    flex-shrink: 0;
+    white-space: nowrap;
+    gap: 1rem;
+    &:link,
+    &:visited {
+        color: #011f3a;
+    }
+
+    .no-touch &:hover,
+    .touch &:active {
+        color: var(--primary-color);
+    }
+
+    @include breakpoint(mobile) {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.3rem;
+        padding: 1rem 1.5rem;
+        line-height: 115%;
+    }
+}
+
+.service__nav-link-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+    object-fit: contain;
+
+    @include breakpoint(mobile) {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
+.service__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12.5rem;
+
+    @include breakpoint(mobile) {
+        gap: 5rem;
+    }
+}
+
+.service__card {
+    display: flex;
+    align-items: flex-start;
+    gap: 8rem;
+
+    @include breakpoint(mobile) {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+}
+
+.service__card-image-block {
+    width: 50%;
+    flex-grow: 1;
+    min-height: 60rem;
+    position: relative;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(mobile) {
+        width: 100%;
+        flex-grow: 0;
+        min-height: 20rem;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: -2;
+        background: #f8fbff;
+        height: 40rem;
+
+        @include breakpoint(mobile) {
+            height: 14.5rem;
+        }
+    }
+}
+
+.service__card-number {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #bed2e4;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.2rem;
+    -webkit-text-stroke-color: #bed2e4;
+    margin-bottom: 2rem;
+    margin-top: 8.5rem;
+
+    @include breakpointMF(small-tablet) {
+        .service__list-item:nth-child(even) & {
+            margin-left: auto;
+        }
+    }
+
+    @include breakpoint(mobile) {
+        margin-top: 1.5rem;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 5rem;
+        line-height: 100%;
+        letter-spacing: 0.03em;
+        margin-left: auto;
+        -webkit-text-stroke-width: 0.5px;
+    }
+}
+
+.service__card-image-block-heading {
+    margin-top: auto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6rem;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+    color: #bed2e4;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.2rem;
+    -webkit-text-stroke-color: #bed2e4;
+    text-transform: lowercase;
+    width: min-content;
+
+    @include breakpoint(mobile) {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 100%;
+        -webkit-text-stroke-width: 0.5px;
+        margin-left: auto;
+    }
+
+    @include breakpointMF(small-tablet) {
+        .service__list-item:nth-child(even) & {
+            margin-left: auto;
+            text-align: right;
+        }
+    }
+}
+
+.service__card-image {
+    position: absolute;
+    right: 4rem;
+    top: 0;
+    width: 76.5rem;
+    height: auto;
+    object-fit: contain;
+    z-index: -1;
+
+    @include breakpoint(mobile) {
+        left: 0;
+        top: 0;
+        width: 26rem;
+    }
+
+    @include breakpointMF(small-tablet) {
+        .service__list-item:nth-child(even) & {
+            right: auto;
+            left: 4rem;
+        }
+    }
+}
+.service__card-content {
+    width: 70rem;
+    flex-shrink: 0;
+    padding: 5rem 0;
+
+    @include breakpoint(mobile) {
+        width: 100%;
+        flex-shrink: 1;
+        display: contents;
+        padding: 0;
+    }
+
+    @include breakpointMF(small-tablet) {
+        .service__list-item:nth-child(even) & {
+            order: -1;
+        }
+    }
+}
+
+.service__card-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 6.5rem;
+    line-height: 100%;
+    margin-bottom: 3rem;
+    max-width: 60rem;
+
+    @include breakpoint(mobile) {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 3rem;
+        line-height: 100%;
+        margin-bottom: 2rem;
+        order: -1;
+    }
+}
+
+.service__card-text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 135%;
+    margin-bottom: 3.5rem;
+
+    @include breakpoint(mobile) {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 125%;
+        margin-bottom: 2rem;
+    }
+}
+
+.service__card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 5rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 2rem;
+    }
+}
+
+.service__card-list-item {
+    padding-left: 2.2rem;
+    position: relative;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 100%;
+
+    @include breakpoint(mobile) {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.3rem;
+        line-height: 115%;
+        padding-left: 1.5rem;
+    }
+    &::before {
+        content: '';
+        width: 0.8rem;
+        height: 0.8rem;
+        border-radius: 50%;
+        background-color: var(--primary-color);
+        position: absolute;
+        left: 0;
+        top: 0.3rem;
+
+        @include breakpoint(mobile) {
+            top: .3rem;
+        }
+    }
+}
+
+
+.service__card-order-link {
+    @include breakpoint(mobile) {
+        width: 100%;
+    }
+}
