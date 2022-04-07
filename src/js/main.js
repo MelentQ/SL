@@ -43,6 +43,9 @@ import fancybox from './fancybox';
 import aboutReviewsSlider from './aboutReviewsSlider';
 import filtersNav from './filtersNav';
 import stickyNavWrapper from './stickyNavWrapper';
+import articleGallery from './articleGallery';
+import articleTable from './articleTable';
+import articleInterestingSlider from './articleInterestingSlider';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -89,6 +92,9 @@ document.addEventListener('DOMContentLoaded', function() {
     aboutReviewsSlider();
     filtersNav();
     stickyNavWrapper();
+    articleGallery();
+    articleTable();
+    articleInterestingSlider();
 
     if (history.scrollRestoration) {
         history.scrollRestoration = 'manual';

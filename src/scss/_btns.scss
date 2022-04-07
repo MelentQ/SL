@@ -195,6 +195,7 @@
         .touch &:active {
             color: white;
             background-color: var(--primary-color-hover);
+            border-color: var(--primary-color-hover);
         }
     }
 

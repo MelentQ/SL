@@ -607,15 +607,20 @@
 .catalog__bottom-row {
     @include grid();
     margin-top: 6.5rem;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(5rem);
-    &.revealed {
-        opacity: 1;
-        visibility: inherit;
-        transition: opacity .4s, visibility .4s, transform .4s ease-out;
-        transform: translateY(0rem);
+   
+
+    &.js-block-to-reveal {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(5rem);
+        &.revealed {
+            opacity: 1;
+            visibility: inherit;
+            transition: opacity .4s, visibility .4s, transform .4s ease-out;
+            transform: translateY(0rem);
+        }
     }
+  
 
     @include breakpoint(mobile) {
         margin-top: 4rem;
