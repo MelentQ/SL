@@ -379,7 +379,7 @@
         font-weight: 600;
         font-size: 3.5rem;
         line-height: 135%;
-        margin-top: 3.5rem;
+        margin-top: 9rem;
         color: #011f3a;
 
         @include breakpoint(mobile) {
@@ -894,10 +894,12 @@
     }
 
     .no-touch & {
+        scrollbar-color: var(--primary-color) transparent;
+        scrollbar-width: thin;
         &::-webkit-scrollbar {
             background-color: white;
-            width: 0.6rem;
-            height: 0.6rem;
+            width: .8rem;
+            height: .8rem;
         }
 
         &::-webkit-scrollbar-thumb {
