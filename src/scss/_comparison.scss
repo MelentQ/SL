@@ -336,8 +336,6 @@
     display: grid;
     grid-template-columns: 1fr 20rem 1fr;
 
-    
-
     @include breakpoint(mobile) {
         grid-template-columns: repeat(4, minmax(0, 1fr));
         grid-gap: 1.5rem;
@@ -418,12 +416,11 @@
 
     @include underline();
 
-
     @include breakpointMF(small-tablet) {
         &:first-child {
             grid-column: 1 / 2;
         }
-    
+
         &:last-child {
             grid-column: 3 / 4;
         }
@@ -883,7 +880,7 @@
     &.active {
         opacity: 1;
         visibility: inherit;
-        transition: opacity 0.3s ease .3s, visibility 0.3s ease .3s;
+        transition: opacity 0.3s ease 0.3s, visibility 0.3s ease 0.3s;
         z-index: 10;
         position: relative;
     }
@@ -895,3 +892,4 @@
         margin-top: 2.5rem;
     }
 }
+

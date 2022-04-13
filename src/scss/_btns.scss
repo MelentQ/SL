@@ -191,6 +191,11 @@
         background-color: var(--primary-color);
         color: white;
 
+        &:link,
+        &:visited {
+            color: white;
+        }
+
         .no-touch &:hover,
         .touch &:active {
             color: white;

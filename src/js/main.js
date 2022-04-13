@@ -46,6 +46,7 @@ import stickyNavWrapper from './stickyNavWrapper';
 import articleGallery from './articleGallery';
 import articleTable from './articleTable';
 import articleInterestingSlider from './articleInterestingSlider';
+import comparisonFixedCards from './comparisonFixedCards';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -95,6 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
     articleGallery();
     articleTable();
     articleInterestingSlider();
+    comparisonFixedCards();
 
     if (history.scrollRestoration) {
         history.scrollRestoration = 'manual';

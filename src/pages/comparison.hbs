@@ -1,0 +1,863 @@
+{{#extend "layout"}}
+{{#content "main"}}
+
+<section class="comparison-page">
+    <div class="container">
+        <div class="comparison-page__top-row">
+            <h1 class="comparison-page__heading">
+                сравнение
+            </h1>
+            <a href="#" class="comparison-page__download" download="">
+                <svg width="14" height="14" aria-hidden="true" class="icon-pdf">
+                    <use xlink:href="#pdf"></use>
+                </svg>
+                <div class="comparison-page__download-content">
+                    <div class="comparison-page__download-text">
+                        <span>
+
+
+                            Скачать сравнение <span class="hide-on-mobile">моделей</span>
+                        </span>
+                    </div>
+                    <div class="comparison-page__download-format">
+                        pdf, 2мб
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="comparison-page__add-simple">
+                <svg width="14" height="14" aria-hidden="true" class="icon-add-simple">
+                    <use xlink:href="#add-simple"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="comparison-page__fixed-cards">
+            <div class="container">
+
+                <div class="comparison-page__fixed-cards-wrapper">
+
+
+                    <div class="comparison-page__fixed-cards-inner">
+                        <div class="comparison-page__fixed-card">
+                            <a href="#" class="comparison-page__fixed-card-delete">
+                                <svg width="14" height="14" aria-hidden="true" class="icon-close">
+                                    <use xlink:href="#close"></use>
+                                </svg>
+
+                            </a>
+                            <div class="comparison-page__fixed-card-top-row">
+                                <div class="comparison-page__fixed-card-image-container">
+                                    <img src="img/comparison-1.webp" alt="" class="comparison-page__fixed-card-image">
+                                </div>
+                                <h3 class="comparison-page__fixed-card-title">Zamboni 546</h3>
+                            </div>
+                            <a href="#callback-modal"
+                                class="arrow-btn-small arrow-btn-small--filled comparison-page__fixed-card-link js-open-modal">
+                                <span class="comparison-page__fixed-card-link-desktop-text">
+                                    Оставить заявку
+                                </span>
+                                <span class="comparison-page__fixed-card-link-mobile-text">
+                                    Заявка
+                                </span>
+
+                                <svg width="14" height="14" aria-hidden="true" class="icon-diagonal-arrow">
+                                    <use xlink:href="#diagonal-arrow"></use>
+                                </svg>
+                            </a>
+                            <div class="comparison-page__fixed-card-selector">
+                                <a href="#" class="comparison-page__fixed-card-selector-btn">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-arrow-left">
+                                        <use xlink:href="#arrow-left"></use>
+                                    </svg>
+                                </a>
+                                <div class="comparison-page__fixed-card-selector-pagination">
+                                    1 из 3
+                                </div>
+                                <a href="#" class="comparison-page__fixed-card-selector-btn">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-arrow-left">
+                                        <use xlink:href="#arrow-right"></use>
+                                    </svg>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="comparison-page__fixed-card">
+                            <a href="#" class="comparison-page__fixed-card-delete">
+                                <svg width="14" height="14" aria-hidden="true" class="icon-close">
+                                    <use xlink:href="#close"></use>
+                                </svg>
+
+                            </a>
+                            <div class="comparison-page__fixed-card-top-row">
+                                <div class="comparison-page__fixed-card-image-container">
+                                    <img src="img/comparison-2.webp" alt="" class="comparison-page__fixed-card-image">
+                                </div>
+                                <h3 class="comparison-page__fixed-card-title">ENGO Ice Wolf</h3>
+                            </div>
+                            <a href="#callback-modal"
+                                class="arrow-btn-small arrow-btn-small--filled comparison-page__fixed-card-link js-open-modal">
+                                <span class="comparison-page__fixed-card-link-desktop-text">
+                                    Оставить заявку
+                                </span>
+                                <span class="comparison-page__fixed-card-link-mobile-text">
+                                    Заявка
+                                </span>
+                                <svg width="14" height="14" aria-hidden="true" class="icon-diagonal-arrow">
+                                    <use xlink:href="#diagonal-arrow"></use>
+                                </svg>
+                            </a>
+                            <div class="comparison-page__fixed-card-selector">
+                                <a href="#" class="comparison-page__fixed-card-selector-btn">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-arrow-left">
+                                        <use xlink:href="#arrow-left"></use>
+                                    </svg>
+                                </a>
+                                <div class="comparison-page__fixed-card-selector-pagination">
+                                    2 из 3
+                                </div>
+                                <a href="#" class="comparison-page__fixed-card-selector-btn">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-arrow-left">
+                                        <use xlink:href="#arrow-right"></use>
+                                    </svg>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comparison-page__details">
+            <div class="comparison-page__main-info">
+
+                <div class="comparison-page__toggle">
+                    <div class="comparison-page__toggle-text">
+                        Показывать только различающиеся параметры
+                    </div>
+                    <label class="comparison-page__toggle-btn">
+                        <input type="checkbox" name="difference" value="1" class="comparison-page__toggle-input">
+                        <div class="comparison-page__toggle-selector">
+
+                        </div>
+                    </label>
+                </div>
+                <div class="comparison-page__card">
+                    <a href="#" class="comparison-page__card-delete">
+                        <svg width="14" height="14" aria-hidden="true" class="icon-close">
+                            <use xlink:href="#close"></use>
+                        </svg>
+
+                    </a>
+                    <div class="comparison-page__card-image-container">
+                        <img src="img/comparison-1.webp" alt="" class="comparison-page__card-image">
+                    </div>
+                    <h3 class="comparison-page__card-title">
+                        Zamboni 546
+                    </h3>
+                    <div class="comparison-page__card-features">
+                        <div class="comparison-page__card-features-item comparison-page__card-features-item--blue">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-gas">
+                                <use xlink:href="#gas"></use>
+                            </svg>
+                            Бензин
+                        </div>
+                        <div class="comparison-page__card-features-item">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-size">
+                                <use xlink:href="#size"></use>
+                            </svg>
+                            Для стандартных катков
+                        </div>
+                    </div>
+                    <a href="#callback-modal"
+                        class="arrow-btn-small arrow-btn-small--filled comparison-page__card-link js-open-modal">
+                        Оставить заявку
+                        <svg width="14" height="14" aria-hidden="true" class="icon-diagonal-arrow">
+                            <use xlink:href="#diagonal-arrow"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="comparison-page__card">
+                    <a href="#" class="comparison-page__card-delete">
+                        <svg width="14" height="14" aria-hidden="true" class="icon-close">
+                            <use xlink:href="#close"></use>
+                        </svg>
+
+                    </a>
+                    <div class="comparison-page__card-image-container">
+                        <img src="img/comparison-2.webp" alt="" class="comparison-page__card-image">
+                    </div>
+                    <h3 class="comparison-page__card-title">
+                        ENGO Ice Wolf
+                    </h3>
+                    <div class="comparison-page__card-features">
+                        <div class="comparison-page__card-features-item comparison-page__card-features-item--blue">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-electric">
+                                <use xlink:href="#electric"></use>
+                            </svg>
+                            Электро
+                        </div>
+                        <div class="comparison-page__card-features-item">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-size">
+                                <use xlink:href="#size"></use>
+                            </svg>
+                            Для стандартных катков
+                        </div>
+                    </div>
+                    <a href="#callback-modal"
+                        class="arrow-btn-small arrow-btn-small--filled comparison-page__card-link js-open-modal">
+                        Оставить заявку
+                        <svg width="14" height="14" aria-hidden="true" class="icon-diagonal-arrow">
+                            <use xlink:href="#diagonal-arrow"></use>
+                        </svg>
+                    </a>
+                </div>
+                <a href="#" class="comparison-page__add-model">
+                    <svg width="14" height="14" aria-hidden="true" class="icon-add">
+                        <use xlink:href="#add"></use>
+                    </svg>
+                    <div class="comparison-page__add-model-text">
+                        Добавьте модель к сравнению
+                    </div>
+                </a>
+
+            </div>
+            <div class="comparison-page__params-block js-accordion">
+                <div class="comparison-page__params-block-btn-wrapper">
+                    <a href="#" class="comparison-page__params-block-btn js-accordion-btn">
+                        <svg width="14" height="14" aria-hidden="true" class="icon-star icon-blue">
+                            <use xlink:href="#star"></use>
+                        </svg>
+                        Ключевые параметры
+                        <svg width="14" height="14" aria-hidden="true" class="icon-arrow-down">
+                            <use xlink:href="#arrow-down"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="comparison-page__params-block-content js-accordion-content">
+                    <div class="comparison-page__params-block-content-inner">
+                        <div class="comparison-page__key-params">
+                            <div class="comparison-page__key-params-row">
+                                <div class="comparison-page__key-params-heading">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-params-area">
+                                        <use xlink:href="#params-area"></use>
+                                    </svg>
+                                    Площадь заливки, м²
+                                </div>
+                                <div class="comparison-page__key-params-cell">
+                                    1800
+                                </div>
+                                <div class="comparison-page__key-params-cell">
+                                    1800
+                                </div>
+                            </div>
+                            <div class="comparison-page__key-params-row">
+                                <div class="comparison-page__key-params-heading">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-params-water">
+                                        <use xlink:href="#params-water"></use>
+                                    </svg>
+                                    Ёмкость для воды, л
+                                </div>
+                                <div class="comparison-page__key-params-cell comparison-page__key-params-cell--grey">
+                                    738
+                                </div>
+                                <div class="comparison-page__key-params-cell comparison-page__key-params-cell--blue">
+                                    1000
+                                </div>
+                            </div>
+                            <div class="comparison-page__key-params-row">
+                                <div class="comparison-page__key-params-heading">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-params-snow">
+                                        <use xlink:href="#params-snow"></use>
+                                    </svg>
+                                    Ёмкость для снега, м³
+                                </div>
+                                <div class="comparison-page__key-params-cell comparison-page__key-params-cell--blue">
+                                    3,54
+                                </div>
+                                <div class="comparison-page__key-params-cell comparison-page__key-params-cell--grey">
+                                    3,00
+                                </div>
+                            </div>
+                            <div class="comparison-page__key-params-row">
+                                <div class="comparison-page__key-params-heading">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-params-power">
+                                        <use xlink:href="#params-power"></use>
+                                    </svg>
+                                    Мощность, л.с.
+                                </div>
+                                <div class="comparison-page__key-params-cell comparison-page__key-params-cell--blue">
+                                    50
+                                </div>
+                                <div class="comparison-page__key-params-cell comparison-page__key-params-cell--grey">
+                                    —
+                                </div>
+                            </div>
+                            <div class="comparison-page__key-params-row">
+                                <div class="comparison-page__key-params-heading">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-params-transmission">
+                                        <use xlink:href="#params-transmission"></use>
+                                    </svg>
+                                    Тип привода
+                                </div>
+                                <div class="comparison-page__key-params-cell comparison-page__key-params-cell--blue">
+                                    Бензин <span class="comparison-page__key-params-cell-remark">
+                                        +1 опция
+                                    </span>
+                                </div>
+                                <div class="comparison-page__key-params-cell comparison-page__key-params-cell--grey">
+                                    Бензин <span
+                                        class="comparison-page__key-params-cell-remark comparison-page__key-params-cell-remark--blue">
+                                        +3 опции
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comparison-page__params-block js-accordion">
+                <div class="comparison-page__params-block-btn-wrapper">
+                    <a href="#" class="comparison-page__params-block-btn js-accordion-btn">
+                        <svg width="14" height="14" aria-hidden="true" class="icon-dimensions">
+                            <use xlink:href="#dimensions"></use>
+                        </svg>
+                        Размеры
+                        <svg width="14" height="14" aria-hidden="true" class="icon-arrow-down">
+                            <use xlink:href="#arrow-down"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="comparison-page__params-block-content js-accordion-content">
+                    <div class="comparison-page__params-block-content-inner">
+                        <div class="comparison-page__params-table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                            Длина с открытым бункером, cм.
+                                        </th>
+                                        <td>
+                                            503
+                                        </td>
+                                        <td>
+                                            513
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Длина с закрытым бункером, cм.
+                                        </th>
+                                        <td>
+                                            404
+                                        </td>
+                                        <td>
+                                            400
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Длина с закрытым бункером, cм.
+                                        </th>
+                                        <td>
+                                            404
+                                        </td>
+                                        <td>
+                                            400
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Длина с закрытым бункером, cм.
+                                        </th>
+                                        <td>
+                                            404
+                                        </td>
+                                        <td>
+                                            400
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Длина с закрытым бункером, cм.
+                                        </th>
+                                        <td>
+                                            404
+                                        </td>
+                                        <td>
+                                            400
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Длина с закрытым бункером, cм.
+                                        </th>
+                                        <td>
+                                            404
+                                        </td>
+                                        <td>
+                                            400
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Длина с закрытым бункером, cм.
+                                        </th>
+                                        <td>
+                                            404
+                                        </td>
+                                        <td>
+                                            400
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comparison-page__params-block js-accordion">
+                <div class="comparison-page__params-block-btn-wrapper">
+                    <a href="#" class="comparison-page__params-block-btn js-accordion-btn">
+                        <svg width="14" height="14" aria-hidden="true" class="icon-tank">
+                            <use xlink:href="#tank"></use>
+                        </svg>
+                        Вместительность баков
+                        <svg width="14" height="14" aria-hidden="true" class="icon-arrow-down">
+                            <use xlink:href="#arrow-down"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="comparison-page__params-block-content js-accordion-content">
+                    <div class="comparison-page__params-block-content-inner">
+                        <div class="comparison-page__params-table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                            Длина с открытым бункером, cм.
+                                        </th>
+                                        <td>
+                                            503
+                                        </td>
+                                        <td>
+                                            513
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Длина с закрытым бункером, cм.
+                                        </th>
+                                        <td>
+                                            404
+                                        </td>
+                                        <td>
+                                            400
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Длина с закрытым бункером, cм.
+                                        </th>
+                                        <td>
+                                            404
+                                        </td>
+                                        <td>
+                                            400
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Длина с закрытым бункером, cм.
+                                        </th>
+                                        <td>
+                                            404
+                                        </td>
+                                        <td>
+                                            400
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Длина с закрытым бункером, cм.
+                                        </th>
+                                        <td>
+                                            404
+                                        </td>
+                                        <td>
+                                            400
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Длина с закрытым бункером, cм.
+                                        </th>
+                                        <td>
+                                            404
+                                        </td>
+                                        <td>
+                                            400
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Длина с закрытым бункером, cм.
+                                        </th>
+                                        <td>
+                                            404
+                                        </td>
+                                        <td>
+                                            400
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comparison-page__params-block js-accordion">
+                <div class="comparison-page__params-block-btn-wrapper">
+                    <a href="#" class="comparison-page__params-block-btn js-accordion-btn">
+                        <svg width="14" height="14" aria-hidden="true" class="icon-weight">
+                            <use xlink:href="#weight"></use>
+                        </svg>
+                        Вес
+                        <svg width="14" height="14" aria-hidden="true" class="icon-arrow-down">
+                            <use xlink:href="#arrow-down"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="comparison-page__params-block-content js-accordion-content">
+                    <div class="comparison-page__params-block-content-inner">
+                        <div class="comparison-page__params-table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                            Вес пустой машины, кг.
+                                        </th>
+                                        <td>
+                                            2912
+                                        </td>
+                                        <td>
+                                            4700
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Вес полностью загруженной машины, кг.
+
+                                            <span class="comparison-page__info">
+
+                                                <span class="comparison-page__info-icon">
+                                                    <svg width="14" height="14" aria-hidden="true" class="icon-notice">
+                                                        <use xlink:href="#notice"></use>
+                                                    </svg>
+                                                    <span class="comparison-page__info-dropdown">
+                                                        <span class="comparison-page__info-dropdown-inner">
+                                                            Встроеная система автоматической мойки
+                                                        </span>
+                                                    </span>
+                                                </span>
+
+
+                                            </span>
+                                        </th>
+                                        <td>
+                                            3910
+                                        </td>
+                                        <td>
+                                            5700
+                                        </td>
+
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comparison-page__params-block js-accordion">
+                <div class="comparison-page__params-block-btn-wrapper">
+                    <a href="#" class="comparison-page__params-block-btn js-accordion-btn">
+                        <svg width="14" height="14" aria-hidden="true" class="icon-wheel">
+                            <use xlink:href="#wheel"></use>
+                        </svg>
+                        Ходовые характеристики
+                        <svg width="14" height="14" aria-hidden="true" class="icon-arrow-down">
+                            <use xlink:href="#arrow-down"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="comparison-page__params-block-content js-accordion-content">
+                    <div class="comparison-page__params-block-content-inner">
+                        <div class="comparison-page__params-table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                            Мощность, л.с.
+                                        </th>
+                                        <td>
+                                            50
+                                        </td>
+                                        <td class="grey">
+                                            —
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Мощность, л.с.
+                                        </th>
+                                        <td>
+                                            наличие
+                                        </td>
+                                        <td>
+                                            опция
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Дизель
+                                        </th>
+                                        <td class="grey">
+                                            —
+                                        </td>
+                                        <td>
+                                            опция
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Пропан
+                                        </th>
+                                        <td>
+                                            опция
+                                        </td>
+                                        <td>
+                                            опция
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Электро
+                                        </th>
+                                        <td class="grey">
+                                            —
+                                        </td>
+                                        <td>
+                                            наличие
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Ёмкость аккумулятора, ампер-часов
+
+                                            <span class="comparison-page__info">
+
+                                                <span class="comparison-page__info-icon">
+                                                    <svg width="14" height="14" aria-hidden="true" class="icon-notice">
+                                                        <use xlink:href="#notice"></use>
+                                                    </svg>
+                                                    <span class="comparison-page__info-dropdown">
+                                                        <span class="comparison-page__info-dropdown-inner">
+                                                            Встроеная система автоматической мойки
+                                                        </span>
+                                                    </span>
+                                                </span>
+
+
+                                            </span>
+                                        </th>
+                                        <td class="grey">
+                                            —
+                                        </td>
+                                        <td>
+                                            805
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comparison-page__params-block js-accordion">
+                <div class="comparison-page__params-block-btn-wrapper">
+                    <a href="#" class="comparison-page__params-block-btn js-accordion-btn">
+                        <svg width="14" height="14" aria-hidden="true" class="icon-ok">
+                            <use xlink:href="#ok"></use>
+                        </svg>
+                        Комплектация
+                        <svg width="14" height="14" aria-hidden="true" class="icon-arrow-down">
+                            <use xlink:href="#arrow-down"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="comparison-page__params-block-content js-accordion-content">
+                    <div class="comparison-page__params-block-content-inner">
+                        <div class="comparison-page__params-table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                            Мощность, л.с.
+                                        </th>
+                                        <td>
+                                            50
+                                        </td>
+                                        <td class="grey">
+                                            —
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Мощность, л.с.
+                                        </th>
+                                        <td>
+                                            наличие
+                                        </td>
+                                        <td>
+                                            опция
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Дизель
+                                        </th>
+                                        <td class="grey">
+                                            —
+                                        </td>
+                                        <td>
+                                            опция
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Пропан
+                                        </th>
+                                        <td>
+                                            опция
+                                        </td>
+                                        <td>
+                                            опция
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Электро
+                                        </th>
+                                        <td class="grey">
+                                            —
+                                        </td>
+                                        <td>
+                                            наличие
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Ёмкость аккумулятора, ампер-часов
+
+                                            <span class="comparison-page__info">
+
+                                                <span class="comparison-page__info-icon">
+                                                    <svg width="14" height="14" aria-hidden="true" class="icon-notice">
+                                                        <use xlink:href="#notice"></use>
+                                                    </svg>
+                                                    <span class="comparison-page__info-dropdown">
+                                                        <span class="comparison-page__info-dropdown-inner">
+                                                            Встроеная система автоматической мойки
+                                                        </span>
+                                                    </span>
+                                                </span>
+
+
+                                            </span>
+                                        </th>
+                                        <td class="grey">
+                                            —
+                                        </td>
+                                        <td>
+                                            805
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comparison-page__params-block js-accordion">
+                <div class="comparison-page__params-block-btn-wrapper">
+                    <a href="#" class="comparison-page__params-block-btn js-accordion-btn">
+                        <svg width="14" height="14" aria-hidden="true" class="icon-additional">
+                            <use xlink:href="#additional"></use>
+                        </svg>
+                        Дополнительно
+                        <svg width="14" height="14" aria-hidden="true" class="icon-arrow-down">
+                            <use xlink:href="#arrow-down"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="comparison-page__params-block-content js-accordion-content">
+                    <div class="comparison-page__params-block-content-inner">
+                        <div class="comparison-page__params-table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                            Гарантия, мес.
+                                        </th>
+                                        <td>
+                                            24
+                                        </td>
+                                        <td>
+                                            24
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Срок поставки, мес.
+                                        </th>
+                                        <td>
+                                            3
+                                        </td>
+                                        <td>
+                                            3
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="#" class="comparison-page__download comparison-page__bottom-download-link" download="">
+            <svg width="14" height="14" aria-hidden="true" class="icon-pdf">
+                <use xlink:href="#pdf"></use>
+            </svg>
+            <div class="comparison-page__download-content">
+                <div class="comparison-page__download-text">
+                    <span>
+
+
+                        Скачать сравнение моделей
+                    </span>
+                </div>
+                <div class="comparison-page__download-format">
+                    pdf, 2мб
+                </div>
+            </div>
+        </a>
+</section>
+{{/content}}
+{{/extend}}
