@@ -1,5 +1,6 @@
 {
     "title": "Услуги",
     "noAnimatedHeader": true,
-    "whiteHeader": false
+    "whiteHeader": false,
+    "servicesPage": true
 }

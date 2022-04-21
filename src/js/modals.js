@@ -65,7 +65,7 @@ export default function modals() {
             if (!hash) return;
             openModal(hash, event);
         } else if (event.target.matches('.js-close-modal') || event.target.closest('.js-close-modal')) {
-            event.preventDefault();
+            // event.preventDefault();
             const modalToClose = event.target.closest('.js-modal');
             closeModal(modalToClose);
         } else if (event.target.matches('.js-modal')) {

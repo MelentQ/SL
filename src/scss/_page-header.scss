@@ -4,7 +4,7 @@
     top: 0;
     width: 100%;
     height: auto;
-    z-index: 200;
+    z-index: 270;
     transition: background-color 0.2s, box-shadow 0.2s;
 
     .modal-open & {
@@ -352,7 +352,15 @@
     line-height: 110%;
     text-transform: uppercase;
     display: block;
-    @include underline();
+
+    &.active {
+        color: var(--primary-color);
+    }
+
+    &:not(.active) {
+        @include underline();
+    }
+   
 }
 
 .page-header__phone {
