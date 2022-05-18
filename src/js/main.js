@@ -47,12 +47,12 @@ import articleGallery from './articleGallery';
 import articleTable from './articleTable';
 import articleInterestingSlider from './articleInterestingSlider';
 import comparisonFixedCards from './comparisonFixedCards';
+import fixedSidebar from "./fixedSidebar";
 
 gsap.registerPlugin(ScrollTrigger);
 
+window.SL_API = {};
 document.addEventListener('DOMContentLoaded', function() {
-    window.SL_API = {};
-
     polyfills();
     detectTouch();
     setScrollbarWidth();
@@ -80,6 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
     mobileSortBtn();
     catalogSidebar();
     fixedHeader();
+    fixedSidebar();
     menu();
     headerCatalogDropdown();
     comparisonAnimation();

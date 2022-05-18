@@ -1,0 +1,130 @@
+.modal--warning {
+  .modal__inner-modal {
+    border: 3px solid #ED5835;
+  }
+
+  .modal__heading {
+    max-width: 43rem;
+    color: #ED5835;
+  }
+}
+
+.comparison-page__params-block-content {
+  height: auto;
+}
+
+.article__sidebar {
+  position: relative;
+}
+
+.article__layout {
+  align-items: stretch;
+}
+
+.page-header__comparisons {
+  @include breakpoint(mobile) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-right: 1.5rem;
+
+    border-radius: 1rem;
+    border: 2px solid #148EFF;
+
+    svg {
+      width: 1.2rem;
+      height: 1.2rem;
+      fill: #222222;
+    }
+  }
+
+  @include breakpoint(supersmall-mobile) {
+    margin-right: 1rem;
+  }
+}
+
+.page-header__comparisons-notifications {
+  @include breakpoint(mobile) {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(100% - 0.7rem);
+
+    width: 1.5rem;
+    height: 1.5rem;
+
+    background-color: #148EFF;
+    border: 0;
+
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 1;
+  }
+}
+
+.page-header__mobile-phone-link {
+  @include breakpoint(mobile) {
+    margin-right: 2rem;
+  }
+
+  @include breakpoint(supersmall-mobile) {
+    margin-right: 1rem;
+  }
+}
+
+.catalog__brand-slider-card-specs {
+  margin-bottom: 1.7rem;
+}
+
+.catalog__brand-slider-card-price, .catalog-card__price, .product-intro__price {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1;
+  color: #148EFF;
+
+  @include breakpoint(mobile) {
+    font-weight: 600;
+    font-size: 2rem;
+  }
+}
+
+.catalog__brand-slider-card-price {
+  margin-bottom: 2.3rem;
+
+  @include breakpoint(mobile) {
+    margin-bottom: 2rem;
+  }
+}
+
+.product-intro__main-title {
+  margin-bottom: 3rem;
+
+  @include breakpoint(mobile) {
+    margin-bottom: 2rem;
+  }
+}
+
+.product-intro__price {
+  display: inline-block;
+  margin-bottom: 3rem;
+
+  @include breakpoint(mobile) {
+    margin-bottom: 2rem;
+  }
+}
+
+.catalog-card {
+  .catalog-card__price {
+    margin-bottom: 1.8rem;
+
+    @include breakpoint(mobile) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .catalog-card__stats {
+    padding-bottom: 1.5rem;
+  }
+}
