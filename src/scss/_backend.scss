@@ -73,3 +73,58 @@
     margin-right: 1rem;
   }
 }
+
+.catalog__brand-slider-card-specs {
+  margin-bottom: 1.7rem;
+}
+
+.catalog__brand-slider-card-price, .catalog-card__price, .product-intro__price {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1;
+  color: #148EFF;
+
+  @include breakpoint(mobile) {
+    font-weight: 600;
+    font-size: 2rem;
+  }
+}
+
+.catalog__brand-slider-card-price {
+  margin-bottom: 2.3rem;
+
+  @include breakpoint(mobile) {
+    margin-bottom: 2rem;
+  }
+}
+
+.product-intro__main-title {
+  margin-bottom: 3rem;
+
+  @include breakpoint(mobile) {
+    margin-bottom: 2rem;
+  }
+}
+
+.product-intro__price {
+  display: inline-block;
+  margin-bottom: 3rem;
+
+  @include breakpoint(mobile) {
+    margin-bottom: 2rem;
+  }
+}
+
+.catalog-card {
+  .catalog-card__price {
+    margin-bottom: 1.8rem;
+
+    @include breakpoint(mobile) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .catalog-card__stats {
+    padding-bottom: 1.5rem;
+  }
+}
