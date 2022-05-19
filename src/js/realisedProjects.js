@@ -1,4 +1,5 @@
 import { Swiper, Navigation, Pagination } from 'swiper';
+import { Fancybox } from '@fancyapps/ui';
 
 Swiper.use([Navigation, Pagination]);
 
@@ -51,4 +52,20 @@ export default function realisedProjects() {
 
 
     intializeProjectsSliders();
+
+    /* FancyBox options */
+
+    Fancybox.bind('[data-fancybox="gallery"]', {
+        closeButton: false,
+        dragToClose: false,
+        preload: 1.5,
+        Toolbar: {
+            display: []
+        },
+        Image: {
+            ratio: 1
+        }
+    })
+
+
 }
