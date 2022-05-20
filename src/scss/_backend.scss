@@ -17,6 +17,18 @@
   position: relative;
 }
 
+.article__sidebar-inner {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  gap: 7.5rem;
+
+  @include breakpoint(mobile) {
+    flex-shrink: 1;
+    gap: 3rem;
+  }
+}
+
 .article__layout {
   align-items: stretch;
 }

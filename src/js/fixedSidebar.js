@@ -1,4 +1,6 @@
 export default function fixedSidebar() {
+    if (window.innerWidth <= 640) return;
+
     const articleLayout = document.querySelector('.article__layout');
     const articleSidebar = document.querySelector('.article__sidebar');
     const articleSidebarInner = document.querySelector('.article__sidebar-inner');
