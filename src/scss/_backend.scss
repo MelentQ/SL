@@ -128,3 +128,190 @@
     padding-bottom: 1.5rem;
   }
 }
+
+.catalog__brand-another-text {
+  max-width: 43rem;
+  margin-bottom: 0;
+
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 135%;
+}
+
+.discount-order {
+  padding: 0 0 5rem;
+  background-color: #f8fbff;
+
+  &__wrapper {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 54.4rem 1fr;
+    gap: 1rem;
+    padding: 7rem 12.8rem 6.4rem 1.2rem;
+
+    border-radius: 2.5rem;
+    background: url("../img/discount-order-bg.jpg") no-repeat center;
+    background-size: cover;
+
+    color: #fff;
+
+    @include breakpoint(mobile) {
+      grid-template-columns: 1fr;
+      padding: 1.5rem;
+
+      border-radius: 1.6rem;
+    }
+  }
+
+  &__img-wrapper {
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    left: 1.2rem;
+
+    width: 54.4rem;
+  }
+
+  &__title {
+    margin-bottom: 4rem;
+
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 1.2;
+
+    @include breakpoint(mobile) {
+      margin-bottom: 3rem;
+
+      font-style: normal;
+      font-weight: 600;
+      font-size: 2rem;
+      line-height: 125%;
+    }
+    
+    span {
+      color: var(--primary-color);
+    }
+  }
+
+  &__features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 5.5rem;
+
+    @include breakpoint(mobile) {
+      grid-template-columns: 1fr;
+      gap: 1.6rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__feature {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  &__feature-icon {
+    width: 6rem;
+    height: 6rem;
+
+    @include breakpoint(mobile) {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+
+  &__feature-text {
+    max-width: 22rem;
+
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1;
+
+    @include breakpoint(mobile) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__form {
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 4.4rem;
+
+    background-color: #fff;
+    border-radius: 2.5rem;
+
+    @include breakpoint(mobile) {
+      padding: 1.6rem;
+      grid-template-columns: 1fr;
+      margin-bottom: 2rem;
+
+      border-radius: 1.6rem;
+    }
+  }
+
+  &__button {
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 2rem;
+    background-color: var(--secondary-color);
+
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include breakpoint(mobile) {
+      height: 5rem;
+
+      font-size: 1.6rem;
+      border-radius: 1.2rem;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    gap: 4rem;
+
+    @include breakpoint(mobile) {
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+  }
+
+  &__description {
+    max-width: 49.4rem;
+
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.35;
+
+    @include breakpoint(mobile) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__contacts {
+    max-width: 31rem;
+
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 1.35;
+    opacity: 0.6;
+
+    @include breakpoint(mobile) {
+      font-size: 1.4rem;
+    }
+  }
+}
