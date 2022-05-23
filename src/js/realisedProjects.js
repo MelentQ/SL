@@ -55,17 +55,9 @@ export default function realisedProjects() {
 
     /* FancyBox options */
 
-    Fancybox.bind('[data-fancybox="gallery"]', {
-        closeButton: false,
-        dragToClose: false,
-        preload: 1.5,
-        Toolbar: {
-            display: []
-        },
-        Image: {
-            ratio: 1
-        }
+    const imgSliders = document.querySelectorAll('.realised-projects__card-image-slider');
+
+    imgSliders.forEach(slider => {
+        const images = slider.querySelectorAll('.realised-projects__card-image-slider-card-image');
     })
-
-
 }

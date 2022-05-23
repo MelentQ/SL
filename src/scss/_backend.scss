@@ -327,3 +327,12 @@
     }
   }
 }
+
+.swiper-lazy {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.swiper-lazy-loaded {
+  opacity: 1;
+}

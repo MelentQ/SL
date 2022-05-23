@@ -1,6 +1,6 @@
-import { Swiper, Navigation, Parallax, Pagination, Controller, EffectFade } from 'swiper';
+import { Swiper, Navigation, Parallax, Pagination, Controller, EffectFade, Lazy} from 'swiper';
 
-Swiper.use([Navigation, Parallax, Pagination, Controller, EffectFade]);
+Swiper.use([Navigation, Parallax, Pagination, Controller, EffectFade, Lazy]);
 
 export default function introSlider() {
     const elements = Array.from(document.querySelectorAll('.js-intro-slider'));
@@ -72,6 +72,13 @@ export default function introSlider() {
                 type: 'bullets',
                 clickable: true
             },
+            preloadImages: false,
+            lazy: {
+                loadOnTransitionStart: false,
+                loadPrevNext: true
+            },
+            watchSlidesProgress: true,
+            watchSlidesVisibility: true,
             parallax: true,
             navigation: {
                 nextEl: element.querySelector('.intro__slider-arrow--next'),
