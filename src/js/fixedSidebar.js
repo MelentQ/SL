@@ -5,7 +5,7 @@ export default function fixedSidebar() {
     const articleSidebar = document.querySelector('.article__sidebar');
     const articleSidebarInner = document.querySelector('.article__sidebar-inner');
 
-    if (!articleLayout) return;
+    if (!articleLayout && !articleSidebar) return;
 
     coordsCheck(articleSidebarInner, articleSidebar, articleLayout);
 
