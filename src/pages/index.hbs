@@ -8188,8 +8188,12 @@
                     </li>
                 </ul>
                 <form class="discount-order__form" action="#" data-need-validation novalidate>
-                    <input class="discount-form__input text-input" type="text" name="name" required placeholder="Имя">
-                    <input class="discount-form__input text-input js-phone-input" type="tel" name="name" data-parsley-phone required placeholder="+7 000 000-00-00">
+                    <div class="discount-order__input-wrapper">
+                        <input class="discount-form__input text-input" type="text" name="name" required placeholder="Имя">
+                    </div>
+                    <div class="discount-order__input-wrapper">
+                        <input class="discount-form__input text-input js-phone-input" type="tel" name="name" data-parsley-phone required placeholder="+7 000 000-00-00">
+                    </div>
                     <button class="discount-order__button" type="submit">Отправить заявку</button>
                 </form>
                 <div class="discount-order__footer">
