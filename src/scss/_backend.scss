@@ -271,9 +271,15 @@
     }
   }
 
+  &__input-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__button {
     justify-content: center;
     align-items: center;
+    height: 7rem;
 
     border-radius: 2rem;
     background-color: var(--secondary-color);
