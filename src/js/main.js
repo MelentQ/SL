@@ -12,7 +12,7 @@ import datepicker from './datepicker';
 import accordions from './accordions';
 import modals from './modals';
 
-import gsap from 'gsap';
+import gsap from './gsap-shockingly-green/src/all';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import footerSocialHover from './footerSocialHover';
 import realisedProjects from './realisedProjects';
