@@ -1,4 +1,4 @@
-import gsap from 'gsap';
+import gsap from './gsap-shockingly-green/minified/gsap.min';
 
 export default function comparisonAnimation() {
     document.addEventListener('click', event => {
