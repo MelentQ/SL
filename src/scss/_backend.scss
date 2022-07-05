@@ -346,3 +346,13 @@
 h1[class$='heading'], h1[class$='title']{
   font-size: 8rem;
 }
+
+#callback-modal-comparison {
+  .modal__inner-modal {
+    border: 3px solid #ED5835;
+  }
+
+  .modal__heading {
+    color: #ED5835;
+  }
+}
