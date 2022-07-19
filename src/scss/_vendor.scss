@@ -19,3 +19,13 @@
     opacity: 1;
     transition: opacity 300ms;
 }
+
+.fancy-project {
+    .fancybox__toolbar {
+        display: none;
+    }
+
+    .fancybox__slide {
+        padding: 0;
+    }
+}
