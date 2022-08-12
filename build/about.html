@@ -40,11 +40,7 @@
                 display: flex;
                 flex-direction: column;
                 background-color: #fff;
-        
             }
-        
-        
-        
         
             .loader__logo {
                 margin: auto;
@@ -892,8 +888,10 @@
 
 <section class="realised-projects js-realised-projects">
     <div class="container">
-        <div class="realised-projects__top-row realised-projects__top-row--simple">
-          
+        <div class="realised-projects__top-row">
+            <h2 class="small-heading realised-projects__small-heading">
+                Наш опыт
+            </h2>
             <h3 class="secondary-heading realised-projects__large-heading">
                 Реализованные проекты
             </h3>
@@ -917,24 +915,24 @@
                             <div class="realised-projects__card-image-slider">
                                 <div class="swiper-container">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="realised-projects__card-image-slider-card" data-fancybox="gallery" href="img/realised-projects/1.jpg">
+                                        <a class="swiper-slide" data-src="img/realised-projects/1.jpg" data-fancybox="project-1">
+                                            <div class="realised-projects__card-image-slider-card">
                                                 <img data-src="img/realised-projects/1.jpg" alt=""
                                                     class="realised-projects__card-image-slider-card-image lazyload">
                                             </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="realised-projects__card-image-slider-card" data-fancybox="gallery" href="img/realised-projects/1.jpg">
+                                        </a>
+                                        <a class="swiper-slide" data-src="img/realised-projects/1.jpg" data-fancybox="project-1">
+                                            <div class="realised-projects__card-image-slider-card">
                                                 <img data-src="img/realised-projects/1.jpg" alt=""
                                                     class="realised-projects__card-image-slider-card-image lazyload">
                                             </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="realised-projects__card-image-slider-card" data-fancybox="gallery" href="img/realised-projects/1.jpg">
+                                        </a>
+                                        <a class="swiper-slide" data-src="img/realised-projects/1.jpg" data-fancybox="project-1">
+                                            <div class="realised-projects__card-image-slider-card">
                                                 <img data-src="img/realised-projects/1.jpg" alt=""
                                                     class="realised-projects__card-image-slider-card-image lazyload">
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="realised-projects__card-image-slider-arrows">
@@ -986,7 +984,6 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </li>
                     <li class="swiper-slide realised-projects__list-item">
@@ -994,29 +991,29 @@
                             <div class="realised-projects__card-image-slider">
                                 <div class="swiper-container">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
+                                        <a class="swiper-slide" data-src="img/realised-projects/2.jpg" data-fancybox="project-2">
                                             <div class="realised-projects__card-image-slider-card">
                                                 <img data-src="img/realised-projects/2.jpg" alt=""
-                                                    class="realised-projects__card-image-slider-card-image lazyload">
+                                                     class="realised-projects__card-image-slider-card-image lazyload">
                                             </div>
-                                        </div>
-                                        <div class="swiper-slide">
+                                        </a>
+                                        <a class="swiper-slide" data-src="img/realised-projects/2.jpg" data-fancybox="project-2">
                                             <div class="realised-projects__card-image-slider-card">
                                                 <img data-src="img/realised-projects/2.jpg" alt=""
-                                                    class="realised-projects__card-image-slider-card-image lazyload">
+                                                     class="realised-projects__card-image-slider-card-image lazyload">
                                             </div>
-                                        </div>
-                                        <div class="swiper-slide">
+                                        </a>
+                                        <a class="swiper-slide" data-src="img/realised-projects/2.jpg" data-fancybox="project-2">
                                             <div class="realised-projects__card-image-slider-card">
                                                 <img data-src="img/realised-projects/2.jpg" alt=""
-                                                    class="realised-projects__card-image-slider-card-image lazyload">
+                                                     class="realised-projects__card-image-slider-card-image lazyload">
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="realised-projects__card-image-slider-arrows">
                                     <button
-                                        class="realised-projects__card-image-slider-arrow realised-projects__card-image-slider-arrow--prev">
+                                            class="realised-projects__card-image-slider-arrow realised-projects__card-image-slider-arrow--prev">
                                         <svg width="14" height="14" aria-hidden="true" class="icon-arrow-left">
                                             <use xlink:href="#arrow-left"></use>
                                         </svg>
@@ -1025,7 +1022,7 @@
                                         1 / 3
                                     </div>
                                     <button
-                                        class="realised-projects__card-image-slider-arrow realised-projects__card-image-slider-arrow--next">
+                                            class="realised-projects__card-image-slider-arrow realised-projects__card-image-slider-arrow--next">
                                         <svg width="14" height="14" aria-hidden="true" class="icon-arrow-right">
                                             <use xlink:href="#arrow-right"></use>
                                         </svg>
@@ -1039,108 +1036,30 @@
                                 <div class="realised-projects__card-content">
                                     <div class="realised-projects__card-content-top-row">
                                         <h3 class="realised-projects__card-client-name">
-                                            Ледовый дворец МУ «ЛДС», г. Ленингорск
+                                            Ледовый дворец «Слобода арена», пос. Рыбная слобода
                                         </h3>
                                         <img data-src="img/realised-projects/logo.png" alt=""
-                                            class="realised-projects__card-client-logo lazyload">
+                                             class="realised-projects__card-client-logo lazyload">
                                     </div>
                                     <div class="realised-projects__card-content-info">
                                         <div class="realised-projects__card-date">
                                             <svg width="14" height="14" aria-hidden="true" class="icon-calendar">
                                                 <use xlink:href="#calendar"></use>
                                             </svg>
-                                            Декабрь 2019
+                                            Ноябрь 2020
                                         </div>
                                         <h3 class="realised-projects__card-title">
-                                            Подбор и поставка оборудования «Olympia»
+                                            Подбор и поставка «Zamboni 546»
                                         </h3>
                                         <div class="realised-projects__card-text">
                                             <p>
-                                                Наша компания подобрала и ввела в эксплутацию «Olympia Millennium H» за
-                                                2 месяца.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </li>
-                    <li class="swiper-slide realised-projects__list-item">
-                        <div class="realised-projects__card">
-                            <div class="realised-projects__card-image-slider">
-                                <div class="swiper-container">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="realised-projects__card-image-slider-card">
-                                                <img data-src="img/realised-projects/3.jpg" alt=""
-                                                    class="realised-projects__card-image-slider-card-image lazyload">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="realised-projects__card-image-slider-card">
-                                                <img data-src="img/realised-projects/3.jpg" alt=""
-                                                    class="realised-projects__card-image-slider-card-image lazyload">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="realised-projects__card-image-slider-card">
-                                                <img data-src="img/realised-projects/3.jpg" alt=""
-                                                    class="realised-projects__card-image-slider-card-image lazyload">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="realised-projects__card-image-slider-arrows">
-                                    <button
-                                        class="realised-projects__card-image-slider-arrow realised-projects__card-image-slider-arrow--prev">
-                                        <svg width="14" height="14" aria-hidden="true" class="icon-arrow-left">
-                                            <use xlink:href="#arrow-left"></use>
-                                        </svg>
-                                    </button>
-                                    <div class="realised-projects__card-image-slider-pagination">
-                                        1 / 3
-                                    </div>
-                                    <button
-                                        class="realised-projects__card-image-slider-arrow realised-projects__card-image-slider-arrow--next">
-                                        <svg width="14" height="14" aria-hidden="true" class="icon-arrow-right">
-                                            <use xlink:href="#arrow-right"></use>
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div class="realised-projects__card-image-slider-count">
-                                    3 фотографии
-                                </div>
-                            </div>
-                            <div class="realised-projects__card-link-wrapper">
-                                <div class="realised-projects__card-content">
-                                    <div class="realised-projects__card-content-top-row">
-                                        <h3 class="realised-projects__card-client-name">
-                                            Ледовый дворец «Юбилейный», г. Набережные Челны
-                                        </h3>
-                                        <img data-src="img/realised-projects/logo.png" alt=""
-                                            class="realised-projects__card-client-logo lazyload">
-                                    </div>
-                                    <div class="realised-projects__card-content-info">
-                                        <div class="realised-projects__card-date">
-                                            <svg width="14" height="14" aria-hidden="true" class="icon-calendar">
-                                                <use xlink:href="#calendar"></use>
-                                            </svg>
-                                            Август 2020
-                                        </div>
-                                        <h3 class="realised-projects__card-title">
-                                            Подбор и поставка «Zamboni 446»
-                                        </h3>
-                                        <div class="realised-projects__card-text">
-                                            <p>
-                                                Наша компания подобрала и ввела в эксплуатацию «Zamboni 446» за 4
+                                                Наша компания подобрала и ввела в эксплуатацию «Zamboni 546» за 4
                                                 месяца.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </li>
                     <li class="swiper-slide realised-projects__list-item">
@@ -1148,29 +1067,29 @@
                             <div class="realised-projects__card-image-slider">
                                 <div class="swiper-container">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
+                                        <a class="swiper-slide" data-src="img/realised-projects/3.jpg" data-fancybox="project-3">
                                             <div class="realised-projects__card-image-slider-card">
-                                                <img data-src="img/realised-projects/4.jpg" alt=""
-                                                    class="realised-projects__card-image-slider-card-image lazyload">
+                                                <img data-src="img/realised-projects/3.jpg" alt=""
+                                                     class="realised-projects__card-image-slider-card-image lazyload">
                                             </div>
-                                        </div>
-                                        <div class="swiper-slide">
+                                        </a>
+                                        <a class="swiper-slide" data-src="img/realised-projects/3.jpg" data-fancybox="project-3">
                                             <div class="realised-projects__card-image-slider-card">
-                                                <img data-src="img/realised-projects/4.jpg" alt=""
-                                                    class="realised-projects__card-image-slider-card-image lazyload">
+                                                <img data-src="img/realised-projects/3.jpg" alt=""
+                                                     class="realised-projects__card-image-slider-card-image lazyload">
                                             </div>
-                                        </div>
-                                        <div class="swiper-slide">
+                                        </a>
+                                        <a class="swiper-slide" data-src="img/realised-projects/3.jpg" data-fancybox="project-3">
                                             <div class="realised-projects__card-image-slider-card">
-                                                <img data-src="img/realised-projects/4.jpg" alt=""
-                                                    class="realised-projects__card-image-slider-card-image lazyload">
+                                                <img data-src="img/realised-projects/3.jpg" alt=""
+                                                     class="realised-projects__card-image-slider-card-image lazyload">
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="realised-projects__card-image-slider-arrows">
                                     <button
-                                        class="realised-projects__card-image-slider-arrow realised-projects__card-image-slider-arrow--prev">
+                                            class="realised-projects__card-image-slider-arrow realised-projects__card-image-slider-arrow--prev">
                                         <svg width="14" height="14" aria-hidden="true" class="icon-arrow-left">
                                             <use xlink:href="#arrow-left"></use>
                                         </svg>
@@ -1179,7 +1098,7 @@
                                         1 / 3
                                     </div>
                                     <button
-                                        class="realised-projects__card-image-slider-arrow realised-projects__card-image-slider-arrow--next">
+                                            class="realised-projects__card-image-slider-arrow realised-projects__card-image-slider-arrow--next">
                                         <svg width="14" height="14" aria-hidden="true" class="icon-arrow-right">
                                             <use xlink:href="#arrow-right"></use>
                                         </svg>
@@ -1193,30 +1112,30 @@
                                 <div class="realised-projects__card-content">
                                     <div class="realised-projects__card-content-top-row">
                                         <h3 class="realised-projects__card-client-name">
-                                            Ледовый дворец «Арктика», г. Буинск, Татарстан
+                                            Ледовый дворец «Слобода арена», пос. Рыбная слобода
                                         </h3>
                                         <img data-src="img/realised-projects/logo.png" alt=""
-                                            class="realised-projects__card-client-logo lazyload">
+                                             class="realised-projects__card-client-logo lazyload">
                                     </div>
                                     <div class="realised-projects__card-content-info">
                                         <div class="realised-projects__card-date">
                                             <svg width="14" height="14" aria-hidden="true" class="icon-calendar">
                                                 <use xlink:href="#calendar"></use>
                                             </svg>
-                                            Октябрь 2019
+                                            Ноябрь 2020
                                         </div>
                                         <h3 class="realised-projects__card-title">
-                                            Подбор и поставка оборудования «Olympia»
+                                            Подбор и поставка «Zamboni 546»
                                         </h3>
                                         <div class="realised-projects__card-text">
                                             <p>
-                                                Наша компания подобрала и доставила «Olympia Millennium» за 4 месяца.
+                                                Наша компания подобрала и ввела в эксплуатацию «Zamboni 546» за 4
+                                                месяца.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </li>
                     <li class="swiper-slide realised-projects__list-item">
@@ -1224,29 +1143,29 @@
                             <div class="realised-projects__card-image-slider">
                                 <div class="swiper-container">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
+                                        <a class="swiper-slide" data-src="img/realised-projects/4.jpg" data-fancybox="project-4">
                                             <div class="realised-projects__card-image-slider-card">
-                                                <img data-src="img/realised-projects/5.jpg" alt=""
-                                                    class="realised-projects__card-image-slider-card-image lazyload">
+                                                <img data-src="img/realised-projects/4.jpg" alt=""
+                                                     class="realised-projects__card-image-slider-card-image lazyload">
                                             </div>
-                                        </div>
-                                        <div class="swiper-slide">
+                                        </a>
+                                        <a class="swiper-slide" data-src="img/realised-projects/4.jpg" data-fancybox="project-4">
                                             <div class="realised-projects__card-image-slider-card">
-                                                <img data-src="img/realised-projects/5.jpg" alt=""
-                                                    class="realised-projects__card-image-slider-card-image lazyload">
+                                                <img data-src="img/realised-projects/4.jpg" alt=""
+                                                     class="realised-projects__card-image-slider-card-image lazyload">
                                             </div>
-                                        </div>
-                                        <div class="swiper-slide">
+                                        </a>
+                                        <a class="swiper-slide" data-src="img/realised-projects/4.jpg" data-fancybox="project-4">
                                             <div class="realised-projects__card-image-slider-card">
-                                                <img data-src="img/realised-projects/5.jpg" alt=""
-                                                    class="realised-projects__card-image-slider-card-image lazyload">
+                                                <img data-src="img/realised-projects/4.jpg" alt=""
+                                                     class="realised-projects__card-image-slider-card-image lazyload">
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="realised-projects__card-image-slider-arrows">
                                     <button
-                                        class="realised-projects__card-image-slider-arrow realised-projects__card-image-slider-arrow--prev">
+                                            class="realised-projects__card-image-slider-arrow realised-projects__card-image-slider-arrow--prev">
                                         <svg width="14" height="14" aria-hidden="true" class="icon-arrow-left">
                                             <use xlink:href="#arrow-left"></use>
                                         </svg>
@@ -1255,7 +1174,7 @@
                                         1 / 3
                                     </div>
                                     <button
-                                        class="realised-projects__card-image-slider-arrow realised-projects__card-image-slider-arrow--next">
+                                            class="realised-projects__card-image-slider-arrow realised-projects__card-image-slider-arrow--next">
                                         <svg width="14" height="14" aria-hidden="true" class="icon-arrow-right">
                                             <use xlink:href="#arrow-right"></use>
                                         </svg>
@@ -1269,30 +1188,106 @@
                                 <div class="realised-projects__card-content">
                                     <div class="realised-projects__card-content-top-row">
                                         <h3 class="realised-projects__card-client-name">
-                                            Министерство спорта республики Татарстан, г. Казань
+                                            Ледовый дворец «Слобода арена», пос. Рыбная слобода
                                         </h3>
                                         <img data-src="img/realised-projects/logo.png" alt=""
-                                            class="realised-projects__card-client-logo lazyload">
+                                             class="realised-projects__card-client-logo lazyload">
                                     </div>
                                     <div class="realised-projects__card-content-info">
                                         <div class="realised-projects__card-date">
                                             <svg width="14" height="14" aria-hidden="true" class="icon-calendar">
                                                 <use xlink:href="#calendar"></use>
                                             </svg>
-                                            Апрель 2020
+                                            Ноябрь 2020
                                         </div>
                                         <h3 class="realised-projects__card-title">
-                                            Подбор и поставка «Zamboni 446»
+                                            Подбор и поставка «Zamboni 546»
                                         </h3>
                                         <div class="realised-projects__card-text">
                                             <p>
-                                                Наша компания подобрала и ввела в эксплутацию «Zamboni 446» за 4 месяца.
+                                                Наша компания подобрала и ввела в эксплуатацию «Zamboni 546» за 4
+                                                месяца.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
+                        </div>
+                    </li>
+                    <li class="swiper-slide realised-projects__list-item">
+                        <div class="realised-projects__card">
+                            <div class="realised-projects__card-image-slider">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <a class="swiper-slide" data-src="img/realised-projects/5.jpg" data-fancybox="project-5">
+                                            <div class="realised-projects__card-image-slider-card">
+                                                <img data-src="img/realised-projects/5.jpg" alt=""
+                                                     class="realised-projects__card-image-slider-card-image lazyload">
+                                            </div>
+                                        </a>
+                                        <a class="swiper-slide" data-src="img/realised-projects/5.jpg" data-fancybox="project-5">
+                                            <div class="realised-projects__card-image-slider-card">
+                                                <img data-src="img/realised-projects/5.jpg" alt=""
+                                                     class="realised-projects__card-image-slider-card-image lazyload">
+                                            </div>
+                                        </a>
+                                        <a class="swiper-slide" data-src="img/realised-projects/5.jpg" data-fancybox="project-5">
+                                            <div class="realised-projects__card-image-slider-card">
+                                                <img data-src="img/realised-projects/5.jpg" alt=""
+                                                     class="realised-projects__card-image-slider-card-image lazyload">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="realised-projects__card-image-slider-arrows">
+                                    <button
+                                            class="realised-projects__card-image-slider-arrow realised-projects__card-image-slider-arrow--prev">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-arrow-left">
+                                            <use xlink:href="#arrow-left"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="realised-projects__card-image-slider-pagination">
+                                        1 / 3
+                                    </div>
+                                    <button
+                                            class="realised-projects__card-image-slider-arrow realised-projects__card-image-slider-arrow--next">
+                                        <svg width="14" height="14" aria-hidden="true" class="icon-arrow-right">
+                                            <use xlink:href="#arrow-right"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="realised-projects__card-image-slider-count">
+                                    3 фотографии
+                                </div>
+                            </div>
+                            <div class="realised-projects__card-link-wrapper">
+                                <div class="realised-projects__card-content">
+                                    <div class="realised-projects__card-content-top-row">
+                                        <h3 class="realised-projects__card-client-name">
+                                            Ледовый дворец «Слобода арена», пос. Рыбная слобода
+                                        </h3>
+                                        <img data-src="img/realised-projects/logo.png" alt=""
+                                             class="realised-projects__card-client-logo lazyload">
+                                    </div>
+                                    <div class="realised-projects__card-content-info">
+                                        <div class="realised-projects__card-date">
+                                            <svg width="14" height="14" aria-hidden="true" class="icon-calendar">
+                                                <use xlink:href="#calendar"></use>
+                                            </svg>
+                                            Ноябрь 2020
+                                        </div>
+                                        <h3 class="realised-projects__card-title">
+                                            Подбор и поставка «Zamboni 546»
+                                        </h3>
+                                        <div class="realised-projects__card-text">
+                                            <p>
+                                                Наша компания подобрала и ввела в эксплуатацию «Zamboni 546» за 4
+                                                месяца.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -1306,12 +1301,13 @@
                     <use xlink:href="#diagonal-arrow"></use>
                 </svg>
             </a>
-            <a href="#" class="blue-btn">
+            <a href="#callback-modal" class="blue-btn js-open-modal">
                 Заказать оборудование
             </a>
         </div>
     </div>
 </section>
+
 
 <section class="about-reviews">
     <div class="container">
