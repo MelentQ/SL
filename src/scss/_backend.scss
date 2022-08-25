@@ -345,6 +345,10 @@
 
 h1[class$='heading'], h1[class$='title']{
   font-size: 8rem;
+
+  @include breakpoint(mobile) {
+    font-size: 3rem;
+  }
 }
 
 #callback-modal-comparison {
