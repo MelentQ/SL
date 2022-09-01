@@ -362,5 +362,10 @@ h1[class$='heading'], h1[class$='title']{
 }
 
 .catalog-card__image-slider-pagination {
+  justify-content: flex-start;
+  overflow: visible;
+}
+
+.catalog-card__top-row {
   overflow: hidden;
 }
