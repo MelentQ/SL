@@ -369,3 +369,11 @@ h1[class$='heading'], h1[class$='title']{
 .catalog-card__top-row {
   overflow: hidden;
 }
+
+h1.product-intro__main-title {
+  font-size: 6rem;
+
+  @include breakpoint(mobile) {
+    font-size: 2rem;
+  }
+}
