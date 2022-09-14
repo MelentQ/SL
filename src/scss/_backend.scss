@@ -394,3 +394,15 @@ h1.product-intro__main-title {
     height: 0.8rem;
   }
 }
+
+.catalog-card__image-slider-pagination {
+  margin: 0.7rem auto;
+  align-items: stretch;
+  overflow: hidden;
+
+  .swiper-pagination-bullet {
+    transition: 0.3s;
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+}

@@ -31,7 +31,8 @@ export default function catalogCardsSliders() {
                 pagination: {
                     el: element.querySelector('.catalog-card__image-slider-pagination'),
                     type: 'bullets',
-                    clickable: true
+                    clickable: true,
+                    dynamicBullets: true
                 }
             });
 
