@@ -10,13 +10,15 @@ export default function productGallery() {
         const thumbsContainer = element.querySelector('.product-intro__gallery-thumbs .swiper-container');
         const mainSliderOptions = {
             watchOverflow: true,
-            spaceBetween: 0,
             thumbs: {},
             speed: 700,
+            spaceBetween: 0,
             pagination: {
                 el: element.querySelector('.slider-pagination'),
                 type: 'bullets',
-                clickable: true
+                clickable: true,
+                dynamicBullets: true,
+                dynamicMainBullets: 1
             },
             navigation: {
                 nextEl: element.querySelector('.product-intro__gallery-arrow--next'),
