@@ -51,6 +51,8 @@ import fixedSidebar from "./fixedSidebar";
 
 gsap.registerPlugin(ScrollTrigger);
 
+if (lazySizes) lazySizes.cfg.expFactor = 1;
+
 window.SL_API = {};
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
