@@ -1,15 +1,36 @@
+import loadApi from "./loadApi";
+import getCoords from "./getCoords";
+
 export default function contactsMap() {
     const elements = Array.from(document.querySelectorAll('.js-contacts-map'));
 
     elements.forEach(element => {
-        ymaps.ready(initMap);
+        const loadTrigger = getCoords(element).top;
+        const windowHeight = document.documentElement.clientHeight;
+        const yandexMapsUrl = document.querySelector('#mapurl');
 
-        const pinURL = element.getAttribute('data-pin');
-        const location = element.getAttribute('data-location');
+        if (!yandexMapsUrl) return;
 
-        if (!location) return;
+        const check = () => {
+            const scrollWindow = window.scrollY;
+    
+            if (scrollWindow > loadTrigger - windowHeight && scrollWindow < loadTrigger + windowHeight) {
+                const url = yandexMapsUrl.dataset.url;
+    
+                loadApi('yandex', url,() => { ymaps.ready(initMap); });
+    
+                window.removeEventListener('scroll', check);
+            }
+        }
+
+        window.addEventListener('scroll', check, false);
 
         function initMap() {
+            const pinURL = element.getAttribute('data-pin');
+            const location = element.getAttribute('data-location');
+
+            if (!location) return;
+
             const pin = {
                 iconLayout: 'default#image',
                 iconImageHref: pinURL,
